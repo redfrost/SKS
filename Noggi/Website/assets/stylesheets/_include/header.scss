@@ -1,0 +1,364 @@
+/* Menu bar style */
+.navbar-default {
+  background: #f9f9f9;
+	border-bottom: 4px solid #aaa;
+  border-radius: 0;
+	}
+
+
+/* Logo text */
+.logo-box {
+	margin: 0;
+	}
+	.logo-box a {
+		font-size: 28px;font-size: 1.75rem;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-shadow: 0;
+		}
+		.logo-box small { display: none; } /* Slogan */
+
+
+/* Logo Image */
+.navbar-brand.logo-image {
+	padding: 10px 15px 0;
+	}
+	.navbar-brand.logo-image img {
+		width: 150px;
+		}
+
+
+/* Navigation Menu */
+@media (min-width:992px) {
+		ul.navbar-nav {
+		float: right;
+		}
+	}
+	/* Navigation link */
+	.navbar-default .navbar-nav > li > a {
+    font-size: 1rem;
+    text-shadow: none;
+    }
+    /* Hover */
+    .navbar-default .navbar-nav > li > a:focus,
+    .navbar-default .navbar-nav > li > a:hover {
+    	background-color: #e1e1e1;
+    	}
+		/* Active */
+		.navbar-default .navbar-nav > .active > a,
+		.navbar-default .navbar-nav > .active > a:hover,
+		.navbar-default .navbar-nav > .active > a:focus {
+			background-color: transparent;
+			}
+
+
+
+/* Dropdown toggle
+********************************/
+
+/* Toggle on */
+.navbar-nav li.dropdown.open > .dropdown-toggle,
+.navbar-nav li.dropdown.active > .dropdown-toggle,
+.navbar-nav li.dropdown.open.active > .dropdown-toggle {
+  background: inherit; /* Set to inherit when using mouse hover to open dropdown */
+  color: inherit;
+  }
+  /* Toggle off */
+  .navbar-nav li.dropdown.open.active > .dropdown-toggle,
+  .navbar-nav > li.dropdown > a:focus {
+  background: inherit;
+  color: inherit;
+  }
+  /* Toggle hover */
+  .navbar-nav li.dropdown > .dropdown-toggle:hover,
+  .navbar-nav li.dropdown.open > .dropdown-toggle:hover {
+  background-color: #e1e1e1;
+  }
+
+
+  /* Toggle caret */
+  .navbar-nav li.dropdown > .dropdown-toggle .caret {
+    border-bottom-color: inherit;
+    border-top-color: inherit;
+    }
+    /* Toggle caret hover */
+    .navbar-nav li.dropdown > a:hover .caret,
+    .navbar-nav li.dropdown > a:focus .caret {
+    border-bottom-color: inherit;
+    border-top-color: inherit;
+    }
+    /* Toggle caret active */
+    .navbar-nav li.dropdown.open > .dropdown-toggle .caret,
+    .navbar-nav li.dropdown.active > .dropdown-toggle .caret,
+    .navbar-nav li.dropdown.open.active > .dropdown-toggle .caret {
+    border-bottom-color: #333;
+    border-top-color: #333;
+    }
+
+
+/* Dropdown menu
+********************************/
+.dropdown-menu {
+	font-size: 1rem;
+	padding: 0;
+	margin: 0;
+	border-radius: 0;
+	}
+	/* Dropdown Subheading */
+	.dropdown-menu .dropdown-header {
+		color: #999;
+		text-transform: uppercase;
+		font-weight: bold;
+		}
+	/* Divider */
+	.dropdown-menu .divider {
+		background-color: #ddd;
+		}
+
+
+/* Dropdown link */
+.dropdown-menu > li > a {
+  padding: 10px 20px;
+  }
+  /* Dropdown link hover */
+  .dropdown-menu > li > a:hover,
+  .dropdown-menu > li > a:focus,
+  .dropdown-submenu:hover > a,
+  .dropdown-submenu:focus > a {
+    background-color: #DDDDDD;
+    color: inherit;
+  	}
+  /* Dropdown link active */
+  .dropdown-menu > .active > a,
+  .dropdown-menu > .active > a:hover,
+  .dropdown-menu > .active > a:focus {
+    background-color: #555;
+    color: #fff;
+  	}
+
+
+
+
+
+/* Mobile menu
+********************************/
+
+/* Button */
+.navbar-default .navbar-toggle {
+	border: 0;
+  border-radius: 0;
+	height: 34px;
+  padding: 8px 5px;
+  }
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus {
+		background-color: #999;
+		}
+
+	/* Icon */
+	.navbar-default .navbar-toggle .icon-bar {
+		background-color: #ccc;
+		height: 2px;
+		width: 24px;
+		}
+
+
+
+
+/* Mobile Menu - Breakpoint sm */
+@media (max-width: 991px){
+
+	/* Navbar position */
+	.navbar-fixed-top { position: absolute; } /* Fixed menu is not compatible with iOS5/6 */
+
+	/* Menu */
+	.navbar-collapse {
+		margin-top: 0px;
+		background: #333;
+		max-height: none;
+		}
+		.navbar-collapse .navbar-nav {
+		  margin-top: 0px;
+			margin-bottom: 0px;
+			}
+
+		/* List */
+		.navbar-collapse .navbar-nav li {
+	    border-top: 1px solid #444;
+	    border-bottom: 1px solid #000;
+			}
+
+			.navbar-collapse .navbar-nav li a {
+				color: #ccc;
+				}
+
+		/* Dropdown */
+		.navbar-collapse .navbar-nav .dropdown-menu li {
+			border: 0;
+			}
+			.navbar-collapse .navbar-nav li.divider {
+				display: none;
+				}
+
+				.dropdown-header {
+					font-size: 12px;
+					padding: 3px 20px !important;
+					}
+
+				.dropdown-menu > li > a {
+				  padding: 10px 20px !important;
+					line-height: 1.42857 !important;
+					}
+				.navbar-collapse .navbar-nav li a {
+				  color: #CCCCCC !important;
+					}
+
+
+				.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+				.navbar-nav li.dropdown.open > .dropdown-toggle,
+				.navbar-nav li.dropdown.active > .dropdown-toggle,
+				.navbar-nav li.dropdown.open.active > .dropdown-toggle,
+				.navbar-nav li.dropdown > .dropdown-toggle:hover,
+				.navbar-nav li.dropdown.open > .dropdown-toggle:hover,
+				.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+				.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+				.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+				.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+				.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+			    background-color: #555555;
+			    color: #CCCCCC;
+					}
+
+
+			/* Hover and Active */
+		    .navbar-collapse .navbar-nav > li > a:focus,
+		    .navbar-collapse .navbar-nav > li > a:hover,
+			.navbar-collapse .navbar-nav > .active > a,
+			.navbar-collapse .navbar-nav > .active > a:hover,
+			.navbar-collapse .navbar-nav > .active > a:focus {
+		    background-color: #555;
+				color: #fff;
+		    }
+
+				.navbar-nav li.dropdown > .dropdown-toggle .caret {
+					border-top-color: #999 !important;
+					border-bottom-color: #999 !important;
+					}
+
+}
+
+
+
+
+
+/* Style Add-on */
+
+
+
+
+/* FIX */
+@media (max-width: 991px) {
+.navbar-nav .open .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 none;
+  box-shadow: none;
+  float: none;
+  margin-top: 0;
+  position: static;
+  width: auto;
+	}
+}
+
+
+@media (max-width: 991px) {
+	.navbar.nav-standard {
+		margin-top: -50px;
+		margin-bottom: 0px;
+		border: 0 none;
+		border-bottom: 4px solid #aaa;
+		}
+}
+
+
+
+@media (min-width: 992px){
+
+	.navbar.nav-standard {
+		background: none;
+		border: 0 none;
+		}
+
+	.navbar.nav-standard .navbar-brand {
+    font-size: 42px;font-size: 2.63rem;
+		}
+
+
+	.navbar.nav-standard .logo-box small {
+		display: block;
+		font-size: 16px;font-size: 1rem;
+		padding: 15px 0 10px;
+		font-weight: 200;
+		}
+
+	.navbar.nav-standard .navbar-nav {
+		background-color: #EEEEEE;
+		border-radius: 5px;
+		border: 1px solid #CCCCCC;
+		width: 100%;
+		}
+
+	.navbar.nav-standard .navbar-brand {
+	  margin: -10px 0 40px -10px;
+		}
+
+	.navbar.nav-standard .dropdown-menu {
+		left:auto !important;
+		}
+
+	.navbar.nav-standard .navbar-collapse {
+	  margin-left: -10px;
+	  margin-right: -10px;
+		}
+
+	.navbar.nav-standard .navbar-nav > li:first-child > a {
+	  border-radius: 5px 0 0 5px;
+		}
+
+	.navbar.nav-standard .navbar-nav > li {
+	  display: table-cell;
+	  width: 1%;
+		float: none !important;
+		}
+
+	.navbar.nav-standard .navbar-nav > li > a {
+		@include linear-gradient(#ffffff, #f2f2f2);
+		background-color: #E5E5E5;
+		background-repeat: repeat-x;
+		border-bottom: 1px solid #D5D5D5;
+		color: #777777;
+		font-weight: bold;
+		margin-bottom: 0px;
+		padding-bottom: 12px;
+		padding-top: 12px;
+		text-align: center;
+		border-left: 1px solid #FFFFFF;
+		border-right: 1px solid #D5D5D5;
+		display: block;
+		}
+
+	.navbar.nav-standard .navbar-nav > .active > a,
+	.navbar.nav-standard .navbar-nav > .active > a:hover,
+	.navbar.nav-standard .navbar-nav > .active > a:focus {
+		background-color: #DDDDDD;
+		background-image: none;
+		border-color: transparent;
+		}
+
+.navbar.nav-standard .navbar-nav > li:first-child > a {
+		border-radius: 5px 0 0 5px;
+		}
+
+.navbar.nav-standard .navbar-nav > li:last-child > a {
+		border-radius: 0px 5px 5px 0px;
+		}
+}

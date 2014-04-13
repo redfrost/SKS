@@ -1,0 +1,106 @@
+/* Univers */
+@include font-face(Univers, '../fonts/univers/universltstd-cn-webfont', normal);
+@include font-face(Univers, '../fonts/univers/universltstd-lightcn-webfont', 200);
+@include font-face(Univers, '../fonts/univers/universltstd-boldcn-webfont', 700);
+
+/* Gotham */
+@include font-face(Gotham, '../fonts/gotham/gotham-webfont', normal);
+@include font-face(Gotham, '../fonts/gotham/gotham-italic-webfont', normal, italic);
+@include font-face(Gotham, '../fonts/gotham/gotham-light-webfont', 200);
+@include font-face(Gotham, '../fonts/gotham/gotham-bold-webfont', 700);
+
+
+
+/* Variables */
+$font-size-base: 16;
+$content-width: 500;
+
+@mixin font-size($size) {
+	font-size: $size * 1px;
+	font-size:($size / $font-size-base) * 1rem;
+	}
+
+
+/*
+l  = f / gr
+
+w = l * l
+*/
+
+@mixin font-size($size) {
+	font-size: $size * 1px;
+	font-size:($size / $font-size-base) * 1rem;
+	}
+
+
+/*
+@mixin line-height-golden($font-size-base, $content-width) {
+    $lineHeightRatio : 1.618-(1/(2*1.618)) * (1-($content-width/( ($font-size-base * 1.618) * ($font-size-base * 1.618)    ) ) );
+    $lineHeightValue : ceil($font-size-base * $lineHeightRatio) * 1px;
+
+	}
+
+
+	@mixin line-height-golden($font-size-base, $content-width) {
+	    $lineHeightRatio : 1.618 - ( 1 / (2*1.618) ) * (
+
+				1 - ( $content-width / ( golden-ratio($font-size-base,1) * golden-ratio($font-size-base,1) )
+
+			) );
+
+			$lineHeightValue : ceil($font-size-base * $lineHeightRatio) * 1px;
+}
+
+*/
+
+
+
+/* default */
+body {
+	@include font-size(16);
+	color: #333132;
+	/* line-height: golden-ratio($font-size-base, 1); */
+	line-height: 1.5
+	}
+	p, ul, ol {
+	  margin: 0 0 18px;margin: 0 0 1.13rem;
+		letter-spacing: 0.3px;
+		}
+		del { color: #ccc;}
+
+
+/* Font family */
+.navbar-nav a,
+h1, h2, h3 {
+	font-family: "Univers", $helvetica;
+  text-transform: uppercase;
+	}
+	body, p, h4, h5, h6 { font-family:"Gotham","proxima nova",'proxima-nova', $helvetica; }
+
+
+/* Font style */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4,
+.h5, .h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	line-height: auto;
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	color: #333132;
+	}
+	h1 { font-size: em(38); }
+	h2 { font-size: em(38); }
+	h3 { font-size: em(22); }
+	h4 { font-size: em(18); }
+	h5 { font-size: em(16); }
+	h6 { font-size: em(14); }
+
+.light-weight,.lighter  { font-weight: lighter !important; }
+.normal-weight { font-weight: normal !important;  }
+.heavy-weight,.bolder  { font-weight: bold !important;    }
+
+.byline { color: #BDC3C7;}
+.korean p { line-height: 1.68; }
+.warning { color: #f40c5f; }
+small { font-size: em(14); }
+
+.disabled { color: #ccc !important;}

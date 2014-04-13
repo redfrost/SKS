@@ -1,0 +1,17 @@
+{% include head.html %}
+
+<body id="top" class="responsive" data-spy="scroll">{% if site.preLoader == 'no' %}
+	<div id="master-wrap">{% else %}
+	<div id="master-wrap" style="opacity: 0;">{% endif %}
+
+		<!-- Nav menu -->
+		{% include nav.html %}
+
+		<!-- Contents -->
+		<div class="main-content">
+
+		{{content}}
+
+		</div><!-- /.main-content -->
+
+{% include footer.html %}

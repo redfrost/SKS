@@ -1,0 +1,249 @@
+/* Menu bar style */
+.navbar-default {
+	background-color: #fff;
+	border-bottom: 1px solid #d6d6d6;
+	border-radius: 0px;
+	}
+	.navbar-fixed-top.affix-top {
+		height: 170px;
+		}
+		.navbar-fixed-top.affix {
+			height: 70px;
+			}
+
+
+/* Logo */
+
+.logo { margin-top: 0; float: right; }
+.navbar-fixed-top.affix-top .brand.logo-image {
+  margin-top: 30px !important;
+  overflow: hidden;
+  padding-top: 12px;
+	}
+	.navbar-fixed-top.affix-top .brand.logo-image img { margin-top: 0px; }
+
+	/* Logo - affix */
+	.navbar-fixed-top .brand.logo-image {
+		height: auto;
+		margin-top: 0 !important;
+		overflow: hidden;
+		padding-top: 0;
+		padding-right: 0;
+		}
+		.navbar-fixed-top .brand.logo-image img {
+	    height: auto;
+	    margin-top: 0px;
+	    width: 244px;
+			}
+			.navbar-fixed-top .logo small { display: none; } /* Slogan */
+
+
+/* Navigation Menu */
+@media (min-width:992px) {
+.navbar-fixed-top.affix-top .logo { opacity: 1; margin-top: 0px; }
+.navbar-fixed-top.affix .logo { opacity: 0; margin-top: -100px; }
+.navbar-fixed-top.affix-top	.slogan { width: 240px; height: auto; opacity:0; }
+.navbar-fixed-top.affix .slogan { width: 240px; height: auto; opacity:1; }
+
+	/* Navigation Menu */
+	.navbar-header	{ float: right; }
+	.navbar-collapse {
+		float: left;
+		padding: 0;
+		}
+		ul.navbar-nav { float: left; }
+			.navbar-fixed-top.affix-top ul.navbar-nav { margin: 70px 0 0; }
+			.navbar-fixed-top.affix ul.navbar-nav { margin: 9px 0 0; } /* Affix */
+			.navbar-nav > li:first-child > a { padding-left: 0; }
+	}
+
+	/* Navigation Menu Link */
+	.navbar-nav > li > a {
+    color: #6a6a6a !important;
+		font-size: 20px;font-size: 1.25rem;
+		font-weight: 600;
+		padding-right: 20px;
+		margin-right: 14px;
+		}
+		/* Hover */
+		.navbar-nav > li > a:hover,
+		.navbar-nav > li > a:focus {
+    	color: #a0d525 !important;
+			}
+			/* Active */
+			.navbar-default .navbar-nav > .active > a,
+			.navbar-default .navbar-nav > .active > a:hover,
+			.navbar-default .navbar-nav > .active > a:focus {
+	    	background-color: transparent;
+	    	color: #a0d525 !important;
+				}
+
+
+
+/* Mobile menu
+********************************/
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent !important;
+  box-shadow: none !important;
+	}
+
+/* Button */
+.navbar-toggle,
+.navbar .btn-navbar {
+	background-color: transparent;
+	background-image: none;
+	border-radius: 1px;
+	-webkit-transform: translate3d(0, 0, 0); /* iOS boost & fix flicker */
+	-webkit-backface-visibility: hidden;
+	-webkit-perspective: 1000;
+	border-width: 0;
+	height: 44px;
+	padding: 8px 10px !important;
+	}
+	/* Button Hover */
+	.navbar-default .navbar-toggle:hover,
+	.navbar-default .navbar-toggle:focus,
+	.navbar .btn-navbar:hover,
+	.navbar .btn-navbar:focus,
+	.navbar .btn-navbar:active,
+	.navbar .btn-navbar.active,
+	.navbar .btn-navbar.disabled,
+	.navbar .btn-navbar[disabled] {
+	   background-color: transparent;
+		}
+
+	/* Stripe Icon */
+	.navbar-toggle .icon-bar,
+	.navbar .btn-navbar .icon-bar {
+	    background-color: #ccc !important;
+	    height: 4px;
+	    margin: 4px 0;
+	    width: 24px;
+	    }
+
+	/* Animation */
+	.navbar-toggle { @include transform(rotate(-90deg)); border-radius: 0; }
+	.navbar-toggle.collapsed { @include transform(rotate(0deg)); border-radius: 24px; }
+
+
+
+/* Mobile Menu - Breakpoint sm */
+@media (max-width: 991px){
+
+	/* Navbar position */
+	.navbar-fixed-top {
+		position: absolute;
+		height: 120px !important;
+	  } /* Fixed menu is not compatible with iOS5/6 */
+
+	/* Menu */
+	.navbar-collapse {
+		margin-top: 0px;
+		background: #fff;
+		max-height: none;
+		text-align: center;
+		}
+		.navbar-collapse .navbar-nav {
+		  margin-top: 0px;
+			margin-bottom: 0px;
+			}
+
+		/* List */
+		.navbar-collapse .navbar-nav li {
+	    border-bottom: 1px solid #ddd;
+			}
+			.navbar-collapse .navbar-nav li a {
+			  color: #666666 !important;
+			  }
+				.navbar-collapse .navbar-nav li:first-child {
+			    border-top: 1px solid #ddd;
+					}
+
+
+		/* Dropdown */
+		.navbar-collapse .navbar-nav .dropdown-menu li {
+			border: 0;
+			}
+			.navbar-collapse .navbar-nav li.divider {
+				display: none;
+				}
+
+				.dropdown-header {
+					font-size: 12px;
+					padding: 3px 20px !important;
+					}
+
+				.dropdown-menu > li > a {
+				  padding: 10px 20px !important;
+					line-height: 1.42857 !important;
+					}
+				.navbar-collapse .navbar-nav li a {
+				  color: #CCCCCC;
+					}
+
+				.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+				.navbar-nav li.dropdown.open > .dropdown-toggle,
+				.navbar-nav li.dropdown.active > .dropdown-toggle,
+				.navbar-nav li.dropdown.open.active > .dropdown-toggle,
+				.navbar-nav li.dropdown > .dropdown-toggle:hover,
+				.navbar-nav li.dropdown.open > .dropdown-toggle:hover,
+				.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+				.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+				.navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+				.navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+				.navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+			    background-color: #555555;
+			    color: #CCCCCC;
+					}
+
+			/* Hover and Active */
+		  .navbar-collapse .navbar-nav > li > a:focus,
+		  .navbar-collapse .navbar-nav > li > a:hover,
+			.navbar-collapse .navbar-nav > .active > a,
+			.navbar-collapse .navbar-nav > .active > a:hover,
+			.navbar-collapse .navbar-nav > .active > a:focus {
+		    background-color: transparent;
+				opacity: 0.8 !important;
+		    }
+				.navbar-nav li.dropdown > .dropdown-toggle .caret {
+					border-top-color: #999 !important;
+					border-bottom-color: #999 !important;
+					}
+
+}
+
+
+@media (max-width: 991px){
+
+	.navbar-brand { float: none;}
+
+	 .logo {
+    float: none;
+    margin: 10px 0 0 15px;
+		height: 100px;
+  	}
+		.logo-image {
+			height: 100px;
+		}
+		.navbar-fixed-top.affix-top .brand.logo-image img {
+	    height: auto;
+	    margin-top: 0;
+	    width: 180px;
+		}
+    .navbar-header {
+    	height: 120px;
+    }
+		.navbar-fixed-top	.container {
+			width: 100% !important;
+			}
+		.navbar-fixed-top.affix-top .brand.logo-image,
+		.navbar-fixed-top .brand.logo-image {
+			margin-top: 0 !important;
+			padding: 0 !important;
+			}
+			.navbar-fixed-top .brand.logo-image img {
+			  margin-top: 0 !important;
+				}
+}
+

@@ -1,0 +1,59 @@
+/* Footer style */
+#footer {
+	position: relative;
+	background: #fff;
+	color: #404041;
+	}
+  #footer a,
+  #footer a:active {
+	color: #404041;
+  	opacity: 1;
+  	}
+  	#footer a:hover {
+  		opacity: 0.8;
+  		}
+
+
+
+/* SNS Icon */
+.footerbox div { display: block; float: left; margin-bottom: 20px; }
+.footerbox div:last-of-type { float: right; };
+.footerbox img { height: auto; }
+.footerbox .footerbox-01 img { width: 130px; margin-right: 68px; }
+.footerbox .footerbox-02 img { width: 207px; margin-right: 68px; }
+.footerbox .footerbox-03 img { width: 170px; margin-right: 75px; }
+.footerbox .footerbox-04 { margin-right: 12px; }
+.footerbox .sns-icon img { width: 44px; margin-right: 12px; }
+.footerbox .footerbox-05 { width: 260px; margin-top: -3px; }
+
+.footerbox .footerbox-05 p {
+	color: #414042;
+	font-size: 11px !important;
+	font-weight: lighter;
+	letter-spacing: 0.4px;
+	margin-bottom: 0;
+}
+.footerbox .footerbox-05 strong { font-size: 11px !important; }
+.footerbox .footerbox-05 small { font-size: 10px !important; }
+
+/* Responsive */
+
+@media (max-width: 991px){
+
+}
+
+
+@media (max-width: 767px){
+.footerbox div { text-align: center; width: 100%; margin-bottom: 30px; }
+.footerbox img { margin-right: 0 !important; }
+}
+
+
+
+
+
+
+
+
+
+

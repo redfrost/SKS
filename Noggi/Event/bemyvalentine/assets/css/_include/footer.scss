@@ -1,0 +1,89 @@
+/* Footer style */
+#footer {
+	position: relative;
+	background: #fff;
+	color: #d8353c;
+	}
+#footer .container {
+	padding-top: 75px;
+	padding-bottom: 10px;
+}
+
+  #footer a,
+  #footer a:active {
+	  color: #d8353c;
+  	opacity: 1;
+  	}
+  	#footer a:hover {
+  		opacity: 0.8;
+  		}
+
+
+/* Privacy link */
+#footer .btn-link {
+  color: #D8353C;
+  font-size: 12px;
+  margin-top: -10px;
+  padding: 0 !important;
+  text-transform: none;
+}
+
+/* SNS Icon */
+.footerbox div { display: block; float: left; margin-bottom: 20px; }
+.footerbox img { height: auto; }
+.footerbox .footerbox-01 img { width: 130px; margin-right: 68px; }
+.footerbox .footerbox-02 img { width: 207px; margin-right: 68px; }
+.footerbox .footerbox-03 img { width: 170px; margin-right: 75px; }
+.footerbox .footerbox-04 { margin-right: 12px; }
+.footerbox .sns-icon img { width: 44px; margin-right: 12px; }
+
+
+.footerbox .footerbox-05 p {
+	color: #d8353c;
+	font-size: 11px !important;
+	font-weight: lighter;
+	letter-spacing: 0.4px;
+	margin-bottom: 0;
+}
+.footerbox .footerbox-05 strong { font-size: 11px !important; }
+.footerbox .footerbox-05 small { font-size: 10px !important; }
+
+/* Responsive */
+
+@media (min-width: 992px){
+	.footerbox div:last-of-type { float: right; };
+	.footerbox .footerbox-05 { width: 260px; margin-top: -3px; }
+	#footer .container { padding-left: 0; padding-right: 0; }
+}
+
+
+@media (max-width: 767px){
+.footerbox div { text-align: center; width: 100%; margin-bottom: 30px; }
+.footerbox img { margin-right: 0 !important; }
+}
+
+
+@media (max-width: 1199px){
+
+	/* SNS Icon */
+	.footerbox img { height: auto; }
+	.footerbox .footerbox-01 img { margin-right: 22px; }
+	.footerbox .footerbox-02 img { margin-right: 22px; }
+	.footerbox .footerbox-03 img { margin-right: 22px; }
+	.footerbox .footerbox-04 { margin-right: 22px; }
+	.footerbox .sns-icon img { width: 44px; margin-right: 10px; }
+}
+
+
+@media (max-width: 767px){
+	.footerbox .footerbox-05 {
+	    margin-top: -3px;
+	    text-align: center;
+	    width: 100%;
+	}
+}
+
+
+
+
+

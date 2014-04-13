@@ -1,0 +1,30 @@
+{% include head.html %}
+
+<body id="top" class="{{site.layoutStyle}}" data-spy="scroll">
+	{% if site.preLoader == 'no' %}
+	<div id="master-wrap">
+	{% else %}
+	<div id="master-wrap" style="opacity: 0;">
+	{% endif %}
+
+		<!-- Nav menu -->
+		{% include section-menu.html %}
+
+		<!-- Main jumbotron unit -->
+		{% include section-featured.html %}
+
+		<!-- Contents -->
+		<div class="main-content">
+
+			{% include section-stores.html %}
+
+			{% include section-catering.html %}
+
+			{% include section-franchising.html %}
+
+			{% include section-contact.html %}
+
+		</div><!-- /.main-content -->
+
+		{% include footer.html %}
+

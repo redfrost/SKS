@@ -1,0 +1,77 @@
+/* Footer style */
+#footer {
+	position: relative;
+	background: #fff;
+	color: #404041;
+	padding: 35px 0 0;
+	}
+	#footer .container {
+		padding-top: 30px;
+		}
+
+/* Footer Links */
+#footer a,
+#footer a:active {
+	color: #404041;
+	}
+
+
+/* SNS Icon */
+.footerbox img { height: auto; }
+.footerbox .footerbox-01 img { width: 130px; }
+.footerbox .footerbox-02 img { width: 207px; }
+.footerbox .footerbox-03 img { width: 170px; }
+.footerbox .footerbox-04     { text-align: right; }
+.footerbox .footerbox-04 img { width: 44px; }
+.footerbox .footerbox-05 p {
+	color: #404041;
+	font-size: 11px;
+	font-weight: lighter;
+	letter-spacing: 0;
+	margin-bottom: 0;
+	line-height: 1.5;
+	}
+	.footerbox .footerbox-05 strong { font-size: 12px !important; letter-spacing: 0.4px; }
+	.footerbox .footerbox-05 small { font-size: 11px !important; letter-spacing: 0px; }
+
+
+/* Tablet */
+@media (min-width: 992px) and (max-width: 1024px) {
+	.footerbox .footerbox-05 p { letter-spacing: 0; }
+	.footerbox .footerbox-05 small { display: block; }
+}
+
+@media (min-width: 992px){
+	#footer {margin-bottom: 90px; }
+	.footerbox .footerbox-04 { margin-top: -5px; }
+	.footerbox .footerbox-05 { margin-top: -10px !important; }
+	.footerbox .footerbox-04 img { margin-left: 12px; }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.footerbox .footerbox-04 img {
+		width: 38px;
+		margin-left: 6px;
+	}
+	.footerbox .footerbox-05 {
+		background: #a0d525;
+		display: block;
+		float: left;
+		margin-top: 40px !important;
+		text-align: center;
+		width: 100%;
+		padding: 30px 0 40px;
+		}
+}
+
+
+/* Mobile */
+@media (max-width: 767px) {
+	.footerbox div {
+		text-align: center !important;
+		margin-bottom: 30px;
+		}
+	.footerbox .footerbox-04 img {
+		margin: 6px;
+		}
+}

@@ -1,0 +1,3815 @@
+/* =============================================================================
+   Global setting
+   ============================================================================= */
+/* line 3, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+html {
+  font-size: 100% !important;
+}
+
+/* Link */
+/* line 6, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+a {
+  color: #0088CC;
+  text-decoration: none;
+}
+
+/* line 10, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+a:hover, a:focus {
+  color: #005580;
+  text-decoration: none !important;
+}
+
+/* Remove Firefox selection dot */
+/* line 15, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+a, a:focus, a:active, a:hover, object, embed {
+  outline: none;
+}
+
+/* line 16, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+:-moz-any-link:focus {
+  outline: none;
+}
+
+/* line 17, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+input::-moz-focus-inner {
+  border: 0;
+}
+
+/* line 18, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+:focus {
+  outline: 0;
+}
+
+/* Remove Firefox Dropdown selection dot */
+/* line 21, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+select:-moz-focusring {
+  color: transparent;
+  text-shadow: 0 0 0 #000;
+}
+
+/* line 24, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.fade-hover {
+  opacity: 1;
+}
+
+/* line 25, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.fade-hover:hover {
+  opacity: 0.8;
+}
+
+/* Line */
+/* line 29, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 30px 0 20px;
+  height: 0;
+}
+
+/* Image */
+/* line 33, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+a img {
+  border: none;
+}
+
+/* line 34, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+img {
+  width: 100%;
+  height: auto;
+  -ms-interpolation-mode: bicubic;
+}
+
+/* max-width:100% causes IE8 bug */
+/* Video embed */
+/* line 37, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+iframe {
+  border: 0;
+}
+
+/* SELECTED TEXT */
+/* line 40, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+::selection {
+  background: #ff5e99;
+  color: #FFFFFF;
+}
+
+/* line 41, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+::-moz-selection {
+  background: #ff5e99;
+  color: #FFFFFF;
+}
+
+/* Position */
+/* line 45, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.left {
+  float: left !important;
+}
+
+/* line 46, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 47, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 48, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 49, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.text-center, .text-centre {
+  text-align: center !important;
+}
+
+/* line 50, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.hide {
+  display: none;
+}
+
+/* line 51, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.highlight {
+  background: #ff0;
+}
+
+/* line 52, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.first-child {
+  margin-left: 0 !important;
+}
+
+/* line 53, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.last-child {
+  margin-right: 0 !important;
+}
+
+/* line 54, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 55, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.last-item {
+  margin: 0px !important;
+}
+
+/* Wordwrap */
+/* line 59, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+div {
+  word-wrap: break-word;
+}
+
+/* clearfloat */
+/* line 63, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.clear, .clearfloat {
+  clear: both;
+  font-size: 1px;
+  height: 1px;
+  line-height: 0;
+}
+
+/* Preloader */
+/* line 72, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+#preloader {
+  width: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -100px 0 0 -100px;
+  -webkit-transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+}
+
+/* line 82, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+#preloader, .bar {
+  border-radius: 10px !important;
+}
+
+/* =============================================================================
+   FIX
+============================================================================= */
+/* Firefox opacity jog fix */
+/* line 90, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.fade-hover img {
+  background: #fff;
+}
+
+/* IE Flicker fix */
+/* line 93, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+html {
+  filter: expression(document.execCommand("BackgroundImageCache", false, true));
+}
+
+/* Thumbnails box margin left fix */
+/* line 96, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.thumbnails {
+  margin-left: 0;
+}
+
+/* Bootstrap Fix Lines on Button (Retina) */
+/* line 99, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.btn:hover {
+  background-position: inherit;
+}
+
+/* IE Alert */
+/* line 102, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_global.scss */
+.ie-warning {
+  position: absolute;
+  top: 0;
+  z-index: 999999;
+  width: 100%;
+  text-align: center;
+}
+
+/*!
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.eot?v=4.0.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff?v=4.0.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.0.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa {
+  display: inline-block;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-lg {
+  font-size: 1.3333333333333333em;
+  line-height: .75em;
+  vertical-align: -15%;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-2x {
+  font-size: 2em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-3x {
+  font-size: 3em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-4x {
+  font-size: 4em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-5x {
+  font-size: 5em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ul > li {
+  position: relative;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: .14285714285714285em;
+  text-align: center;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-li.fa-lg {
+  left: -1.8571428571428572em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid .08em #eee;
+  border-radius: .1em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa.pull-left {
+  margin-right: .3em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa.pull-right {
+  margin-left: .3em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+
+@-moz-keyframes spin {
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes spin {
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+
+@-o-keyframes spin {
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  0% {
+    -o-transform: rotate(0deg);
+  }
+
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+
+@-ms-keyframes spin {
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+
+@keyframes spin {
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  0% {
+    transform: rotate(0deg);
+  }
+
+  /* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0,mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2,mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stack-1x, .fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-inverse {
+  color: #fff;
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-glass:before {
+  content: "\f000";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-music:before {
+  content: "\f001";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-search:before {
+  content: "\f002";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-envelope-o:before {
+  content: "\f003";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-heart:before {
+  content: "\f004";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-star:before {
+  content: "\f005";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-star-o:before {
+  content: "\f006";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-user:before {
+  content: "\f007";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-film:before {
+  content: "\f008";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-th-large:before {
+  content: "\f009";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-th:before {
+  content: "\f00a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-th-list:before {
+  content: "\f00b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-check:before {
+  content: "\f00c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-times:before {
+  content: "\f00d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-search-plus:before {
+  content: "\f00e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-search-minus:before {
+  content: "\f010";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-power-off:before {
+  content: "\f011";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-signal:before {
+  content: "\f012";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-gear:before, .fa-cog:before {
+  content: "\f013";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-trash-o:before {
+  content: "\f014";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-home:before {
+  content: "\f015";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-file-o:before {
+  content: "\f016";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-clock-o:before {
+  content: "\f017";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-road:before {
+  content: "\f018";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-download:before {
+  content: "\f019";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-inbox:before {
+  content: "\f01c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-play-circle-o:before {
+  content: "\f01d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rotate-right:before, .fa-repeat:before {
+  content: "\f01e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-refresh:before {
+  content: "\f021";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-list-alt:before {
+  content: "\f022";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-lock:before {
+  content: "\f023";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flag:before {
+  content: "\f024";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-headphones:before {
+  content: "\f025";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-qrcode:before {
+  content: "\f029";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-barcode:before {
+  content: "\f02a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tag:before {
+  content: "\f02b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tags:before {
+  content: "\f02c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-book:before {
+  content: "\f02d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bookmark:before {
+  content: "\f02e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-print:before {
+  content: "\f02f";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-camera:before {
+  content: "\f030";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-font:before {
+  content: "\f031";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bold:before {
+  content: "\f032";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-italic:before {
+  content: "\f033";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-text-height:before {
+  content: "\f034";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-text-width:before {
+  content: "\f035";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-align-left:before {
+  content: "\f036";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-align-center:before {
+  content: "\f037";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-align-right:before {
+  content: "\f038";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-align-justify:before {
+  content: "\f039";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-list:before {
+  content: "\f03a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-dedent:before, .fa-outdent:before {
+  content: "\f03b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-indent:before {
+  content: "\f03c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-video-camera:before {
+  content: "\f03d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-picture-o:before {
+  content: "\f03e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-pencil:before {
+  content: "\f040";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-map-marker:before {
+  content: "\f041";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-adjust:before {
+  content: "\f042";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tint:before {
+  content: "\f043";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-edit:before, .fa-pencil-square-o:before {
+  content: "\f044";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-share-square-o:before {
+  content: "\f045";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrows:before {
+  content: "\f047";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-step-backward:before {
+  content: "\f048";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-fast-backward:before {
+  content: "\f049";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-backward:before {
+  content: "\f04a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-play:before {
+  content: "\f04b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-pause:before {
+  content: "\f04c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stop:before {
+  content: "\f04d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-forward:before {
+  content: "\f04e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-fast-forward:before {
+  content: "\f050";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-step-forward:before {
+  content: "\f051";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-eject:before {
+  content: "\f052";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-left:before {
+  content: "\f053";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-right:before {
+  content: "\f054";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-plus-circle:before {
+  content: "\f055";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-minus-circle:before {
+  content: "\f056";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-times-circle:before {
+  content: "\f057";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-check-circle:before {
+  content: "\f058";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-question-circle:before {
+  content: "\f059";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-info-circle:before {
+  content: "\f05a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-crosshairs:before {
+  content: "\f05b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-times-circle-o:before {
+  content: "\f05c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-check-circle-o:before {
+  content: "\f05d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ban:before {
+  content: "\f05e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-left:before {
+  content: "\f060";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-right:before {
+  content: "\f061";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-up:before {
+  content: "\f062";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-down:before {
+  content: "\f063";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-mail-forward:before, .fa-share:before {
+  content: "\f064";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-expand:before {
+  content: "\f065";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-compress:before {
+  content: "\f066";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-plus:before {
+  content: "\f067";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-minus:before {
+  content: "\f068";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-asterisk:before {
+  content: "\f069";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-exclamation-circle:before {
+  content: "\f06a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-gift:before {
+  content: "\f06b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-leaf:before {
+  content: "\f06c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-fire:before {
+  content: "\f06d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-eye:before {
+  content: "\f06e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-eye-slash:before {
+  content: "\f070";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-warning:before, .fa-exclamation-triangle:before {
+  content: "\f071";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-plane:before {
+  content: "\f072";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-calendar:before {
+  content: "\f073";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-random:before {
+  content: "\f074";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-comment:before {
+  content: "\f075";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-magnet:before {
+  content: "\f076";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-up:before {
+  content: "\f077";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-down:before {
+  content: "\f078";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-retweet:before {
+  content: "\f079";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-shopping-cart:before {
+  content: "\f07a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-folder:before {
+  content: "\f07b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-folder-open:before {
+  content: "\f07c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrows-h:before {
+  content: "\f07e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bar-chart-o:before {
+  content: "\f080";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-twitter-square:before {
+  content: "\f081";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-facebook-square:before {
+  content: "\f082";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-camera-retro:before {
+  content: "\f083";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-key:before {
+  content: "\f084";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-gears:before, .fa-cogs:before {
+  content: "\f085";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-comments:before {
+  content: "\f086";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-thumbs-o-up:before {
+  content: "\f087";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-thumbs-o-down:before {
+  content: "\f088";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-star-half:before {
+  content: "\f089";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-heart-o:before {
+  content: "\f08a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sign-out:before {
+  content: "\f08b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-linkedin-square:before {
+  content: "\f08c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-thumb-tack:before {
+  content: "\f08d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-external-link:before {
+  content: "\f08e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sign-in:before {
+  content: "\f090";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-trophy:before {
+  content: "\f091";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-github-square:before {
+  content: "\f092";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-upload:before {
+  content: "\f093";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-lemon-o:before {
+  content: "\f094";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-phone:before {
+  content: "\f095";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-square-o:before {
+  content: "\f096";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bookmark-o:before {
+  content: "\f097";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-phone-square:before {
+  content: "\f098";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-twitter:before {
+  content: "\f099";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-facebook:before {
+  content: "\f09a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-github:before {
+  content: "\f09b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-unlock:before {
+  content: "\f09c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-credit-card:before {
+  content: "\f09d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rss:before {
+  content: "\f09e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-hdd-o:before {
+  content: "\f0a0";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bullhorn:before {
+  content: "\f0a1";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bell:before {
+  content: "\f0f3";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-certificate:before {
+  content: "\f0a3";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-hand-o-right:before {
+  content: "\f0a4";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-hand-o-left:before {
+  content: "\f0a5";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-hand-o-up:before {
+  content: "\f0a6";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-hand-o-down:before {
+  content: "\f0a7";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-left:before {
+  content: "\f0a8";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-right:before {
+  content: "\f0a9";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-up:before {
+  content: "\f0aa";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-down:before {
+  content: "\f0ab";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-globe:before {
+  content: "\f0ac";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-wrench:before {
+  content: "\f0ad";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tasks:before {
+  content: "\f0ae";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-filter:before {
+  content: "\f0b0";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-briefcase:before {
+  content: "\f0b1";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrows-alt:before {
+  content: "\f0b2";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-group:before, .fa-users:before {
+  content: "\f0c0";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chain:before, .fa-link:before {
+  content: "\f0c1";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-cloud:before {
+  content: "\f0c2";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flask:before {
+  content: "\f0c3";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-cut:before, .fa-scissors:before {
+  content: "\f0c4";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-copy:before, .fa-files-o:before {
+  content: "\f0c5";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-paperclip:before {
+  content: "\f0c6";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-save:before, .fa-floppy-o:before {
+  content: "\f0c7";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-square:before {
+  content: "\f0c8";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-list-ul:before {
+  content: "\f0ca";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-list-ol:before {
+  content: "\f0cb";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-strikethrough:before {
+  content: "\f0cc";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-underline:before {
+  content: "\f0cd";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-table:before {
+  content: "\f0ce";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-truck:before {
+  content: "\f0d1";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-pinterest:before {
+  content: "\f0d2";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-pinterest-square:before {
+  content: "\f0d3";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-google-plus-square:before {
+  content: "\f0d4";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-google-plus:before {
+  content: "\f0d5";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-money:before {
+  content: "\f0d6";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-caret-up:before {
+  content: "\f0d8";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-caret-left:before {
+  content: "\f0d9";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-caret-right:before {
+  content: "\f0da";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-columns:before {
+  content: "\f0db";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-unsorted:before, .fa-sort:before {
+  content: "\f0dc";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-down:before, .fa-sort-asc:before {
+  content: "\f0dd";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-up:before, .fa-sort-desc:before {
+  content: "\f0de";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-envelope:before {
+  content: "\f0e0";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-linkedin:before {
+  content: "\f0e1";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rotate-left:before, .fa-undo:before {
+  content: "\f0e2";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-legal:before, .fa-gavel:before {
+  content: "\f0e3";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-dashboard:before, .fa-tachometer:before {
+  content: "\f0e4";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-comment-o:before {
+  content: "\f0e5";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-comments-o:before {
+  content: "\f0e6";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flash:before, .fa-bolt:before {
+  content: "\f0e7";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sitemap:before {
+  content: "\f0e8";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-umbrella:before {
+  content: "\f0e9";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-paste:before, .fa-clipboard:before {
+  content: "\f0ea";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-lightbulb-o:before {
+  content: "\f0eb";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-exchange:before {
+  content: "\f0ec";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-cloud-download:before {
+  content: "\f0ed";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-cloud-upload:before {
+  content: "\f0ee";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-user-md:before {
+  content: "\f0f0";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stethoscope:before {
+  content: "\f0f1";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-suitcase:before {
+  content: "\f0f2";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bell-o:before {
+  content: "\f0a2";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-coffee:before {
+  content: "\f0f4";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-cutlery:before {
+  content: "\f0f5";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-file-text-o:before {
+  content: "\f0f6";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-building-o:before {
+  content: "\f0f7";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-hospital-o:before {
+  content: "\f0f8";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ambulance:before {
+  content: "\f0f9";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-medkit:before {
+  content: "\f0fa";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-fighter-jet:before {
+  content: "\f0fb";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-beer:before {
+  content: "\f0fc";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-h-square:before {
+  content: "\f0fd";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-plus-square:before {
+  content: "\f0fe";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-double-left:before {
+  content: "\f100";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-double-right:before {
+  content: "\f101";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-double-up:before {
+  content: "\f102";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-double-down:before {
+  content: "\f103";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-left:before {
+  content: "\f104";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-right:before {
+  content: "\f105";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-up:before {
+  content: "\f106";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-angle-down:before {
+  content: "\f107";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-desktop:before {
+  content: "\f108";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-laptop:before {
+  content: "\f109";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tablet:before {
+  content: "\f10a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-mobile-phone:before, .fa-mobile:before {
+  content: "\f10b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-circle-o:before {
+  content: "\f10c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-quote-left:before {
+  content: "\f10d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-quote-right:before {
+  content: "\f10e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-circle:before {
+  content: "\f111";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-mail-reply:before, .fa-reply:before {
+  content: "\f112";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-github-alt:before {
+  content: "\f113";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-folder-o:before {
+  content: "\f114";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-folder-open-o:before {
+  content: "\f115";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-frown-o:before {
+  content: "\f119";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-meh-o:before {
+  content: "\f11a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-gamepad:before {
+  content: "\f11b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-keyboard-o:before {
+  content: "\f11c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flag-o:before {
+  content: "\f11d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flag-checkered:before {
+  content: "\f11e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-terminal:before {
+  content: "\f120";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-code:before {
+  content: "\f121";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-reply-all:before {
+  content: "\f122";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-mail-reply-all:before {
+  content: "\f122";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-star-half-empty:before, .fa-star-half-full:before, .fa-star-half-o:before {
+  content: "\f123";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-location-arrow:before {
+  content: "\f124";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-crop:before {
+  content: "\f125";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-code-fork:before {
+  content: "\f126";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-unlink:before, .fa-chain-broken:before {
+  content: "\f127";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-question:before {
+  content: "\f128";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-info:before {
+  content: "\f129";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-exclamation:before {
+  content: "\f12a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-superscript:before {
+  content: "\f12b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-subscript:before {
+  content: "\f12c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-eraser:before {
+  content: "\f12d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-puzzle-piece:before {
+  content: "\f12e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-microphone-slash:before {
+  content: "\f131";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-shield:before {
+  content: "\f132";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-calendar-o:before {
+  content: "\f133";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-fire-extinguisher:before {
+  content: "\f134";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rocket:before {
+  content: "\f135";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-maxcdn:before {
+  content: "\f136";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-circle-left:before {
+  content: "\f137";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-circle-right:before {
+  content: "\f138";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-circle-up:before {
+  content: "\f139";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-chevron-circle-down:before {
+  content: "\f13a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-html5:before {
+  content: "\f13b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-css3:before {
+  content: "\f13c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-anchor:before {
+  content: "\f13d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-unlock-alt:before {
+  content: "\f13e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bullseye:before {
+  content: "\f140";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ellipsis-h:before {
+  content: "\f141";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ellipsis-v:before {
+  content: "\f142";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rss-square:before {
+  content: "\f143";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-play-circle:before {
+  content: "\f144";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ticket:before {
+  content: "\f145";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-minus-square:before {
+  content: "\f146";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-minus-square-o:before {
+  content: "\f147";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-level-up:before {
+  content: "\f148";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-level-down:before {
+  content: "\f149";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-check-square:before {
+  content: "\f14a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-pencil-square:before {
+  content: "\f14b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-external-link-square:before {
+  content: "\f14c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-share-square:before {
+  content: "\f14d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-compass:before {
+  content: "\f14e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-toggle-down:before, .fa-caret-square-o-down:before {
+  content: "\f150";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-toggle-up:before, .fa-caret-square-o-up:before {
+  content: "\f151";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-toggle-right:before, .fa-caret-square-o-right:before {
+  content: "\f152";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-euro:before, .fa-eur:before {
+  content: "\f153";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-gbp:before {
+  content: "\f154";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-dollar:before, .fa-usd:before {
+  content: "\f155";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-rupee:before, .fa-inr:before {
+  content: "\f156";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-cny:before, .fa-rmb:before, .fa-yen:before, .fa-jpy:before {
+  content: "\f157";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-ruble:before, .fa-rouble:before, .fa-rub:before {
+  content: "\f158";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-won:before, .fa-krw:before {
+  content: "\f159";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bitcoin:before, .fa-btc:before {
+  content: "\f15a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-file:before {
+  content: "\f15b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-alpha-asc:before {
+  content: "\f15d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-alpha-desc:before {
+  content: "\f15e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-amount-asc:before {
+  content: "\f160";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-amount-desc:before {
+  content: "\f161";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-numeric-asc:before {
+  content: "\f162";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sort-numeric-desc:before {
+  content: "\f163";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-thumbs-up:before {
+  content: "\f164";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-thumbs-down:before {
+  content: "\f165";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-youtube-square:before {
+  content: "\f166";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-youtube:before {
+  content: "\f167";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-xing:before {
+  content: "\f168";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-xing-square:before {
+  content: "\f169";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-youtube-play:before {
+  content: "\f16a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-dropbox:before {
+  content: "\f16b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stack-overflow:before {
+  content: "\f16c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-instagram:before {
+  content: "\f16d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-flickr:before {
+  content: "\f16e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-adn:before {
+  content: "\f170";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bitbucket:before {
+  content: "\f171";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bitbucket-square:before {
+  content: "\f172";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tumblr:before {
+  content: "\f173";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-tumblr-square:before {
+  content: "\f174";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-long-arrow-down:before {
+  content: "\f175";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-long-arrow-up:before {
+  content: "\f176";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-long-arrow-left:before {
+  content: "\f177";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-long-arrow-right:before {
+  content: "\f178";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-apple:before {
+  content: "\f179";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-windows:before {
+  content: "\f17a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-android:before {
+  content: "\f17b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-linux:before {
+  content: "\f17c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-dribbble:before {
+  content: "\f17d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-skype:before {
+  content: "\f17e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-foursquare:before {
+  content: "\f180";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-trello:before {
+  content: "\f181";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-female:before {
+  content: "\f182";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-male:before {
+  content: "\f183";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-gittip:before {
+  content: "\f184";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-archive:before {
+  content: "\f187";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-bug:before {
+  content: "\f188";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-vk:before {
+  content: "\f189";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-weibo:before {
+  content: "\f18a";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-renren:before {
+  content: "\f18b";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-pagelines:before {
+  content: "\f18c";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-stack-exchange:before {
+  content: "\f18d";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-o-right:before {
+  content: "\f18e";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-arrow-circle-o-left:before {
+  content: "\f190";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-toggle-left:before, .fa-caret-square-o-left:before {
+  content: "\f191";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-dot-circle-o:before {
+  content: "\f192";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-wheelchair:before {
+  content: "\f193";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-vimeo-square:before {
+  content: "\f194";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-turkish-lira:before, .fa-try:before {
+  content: "\f195";
+}
+
+/* line 4, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/_font-awesome.scss */
+.fa-plus-square-o:before {
+  content: "\f196";
+}
+
+/* Icon font */
+/* =============================================================================
+   Layout template setting
+   ============================================================================= */
+/* Basic layout
+------------------------------------ */
+/* line 3, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+body {
+  margin-top: 120px;
+  background: #fff;
+}
+
+/* Liquid responsive width */
+/* line 8, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.responsive .container {
+  width: 100%;
+}
+
+/* line 11, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+section {
+  position: relative;
+  padding: 30px 0;
+}
+
+/* line 17, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+#featured {
+  background: url("../img/bg-featured.jpg") no-repeat scroll center center #333335;
+  padding-top: 120px;
+  padding-bottom: 70px;
+  margin-bottom: 0;
+}
+
+/* line 25, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+#catering {
+  background-color: #72C6A2;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: 600px 400px;
+  height: 390px;
+  padding: 100px 0 110px;
+}
+
+@media (min-width: 992px) {
+  /* line 34, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+  #catering {
+    background-image: url("../img/bg-catering.jpg");
+  }
+}
+/* line 40, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+#franchising {
+  background: url("../img/bg-franchise.jpg") no-repeat scroll center 500px #676767;
+  padding: 100px 0 110px;
+  height: 390px;
+  color: #fff;
+}
+
+/* line 46, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+#franchising h2, #franchising p {
+  color: #fff;
+}
+
+/* line 47, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+#stores {
+  background: #ffffff;
+}
+
+/* line 48, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+#contact {
+  background: #a0d525;
+  padding: 100px 0 110px;
+}
+
+/* line 50, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.parallax {
+  position: relative !important;
+}
+
+/* line 53, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.warning {
+  background: #e72b37;
+}
+
+/* line 54, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.warning img {
+  width: 20px;
+}
+
+/* line 55, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.warning img.left {
+  float: left;
+}
+
+/* line 56, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.warning img.right {
+  float: right;
+}
+
+/* line 57, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/layout.scss */
+.warning h3 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.88rem;
+  text-align: center;
+}
+
+/* =============================================================================
+   Elements
+   ============================================================================= */
+/* Normal Fade Animation */
+/* line 2, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/animation.scss */
+.logo, .slogan, .animation, .navbar-toggle {
+  -webkit-transition: all 350ms cubic-bezier(0.485, 0, 0.25, 1);
+  -moz-transition: all 350ms cubic-bezier(0.485, 0, 0.25, 1);
+  transition: all 350ms cubic-bezier(0.485, 0, 0.25, 1);
+  /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/
+  -webkit-backface-visibility: hidden;
+  /* Safari Flicker Fix #2 */
+  -webkit-transform: translateZ(0);
+}
+
+/* Fast  Fade Animation */
+/* line 13, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/animation.scss */
+.navbar-fixed-top .brand.logo-image img,
+.navbar-fixed-top ul.navbar-nav,
+.navbar-fixed-top #language-switcher,
+.navbar-fixed-top, .navbar-brand, .animation-fast, .brand, .fade-hover, .nav li a, .sns-icons li, .brand .icon-reorder:before, .maker a, #footer li a, .back-top a {
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  transition: all 200ms ease;
+  /* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/
+  -webkit-backface-visibility: hidden;
+  /* Safari Flicker Fix #2 */
+  -webkit-transform: translateZ(0);
+}
+
+/* Univers */
+@font-face {
+  font-family: 'Univers';
+  src: url("../fonts/univers/universltstd-cn-webfont.eot");
+  src: url("../fonts/univers/universltstd-cn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/univers/universltstd-cn-webfont.ttf") format("truetype"), url("../fonts/univers/universltstd-cn-webfont.svg#universltstd-cn-webfont") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("../fonts/univers/universltstd-lightcn-webfont.eot");
+  src: url("../fonts/univers/universltstd-lightcn-webfont?#iefix") format("embedded-opentype"), url("../fonts/univers/universltstd-lightcn-webfont.ttf") format("truetype"), url("../fonts/univers/universltstd-lightcn-webfont.svg#universltstd-lightcn-webfont") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Univers';
+  src: url("../fonts/univers/universltstd-boldcn-webfont.eot");
+  src: url("../fonts/univers/universltstd-boldcn-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/univers/universltstd-boldcn-webfont.ttf") format("truetype"), url("../fonts/univers/universltstd-boldcn-webfont.svg#universltstd-boldcn-webfont") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Gotham */
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/gotham/gotham-light-webfont.eot");
+  src: url("../fonts/gotham/gotham-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham/gotham-light-webfont.ttf") format("truetype"), url("../fonts/gotham/gotham-light-webfont.svg#gotham-light-webfont") format("svg");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/gotham/gotham-webfont.eot");
+  src: url("../fonts/gotham/gotham-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham/gotham-webfont.ttf") format("truetype"), url("../fonts/gotham/gotham-webfont.svg#gotham-webfont") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/gotham/gotham-italic-webfont.eot");
+  src: url("../fonts/gotham/gotham-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham/gotham-italic-webfont.ttf") format("truetype"), url("../fonts/gotham/gotham-italic-webfont.svg#gotham-italic-webfont") format("svg");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("../fonts/gotham/gotham-bold-webfont.eot");
+  src: url("../fonts/gotham/gotham-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/gotham/gotham-bold-webfont.ttf") format("truetype"), url("../fonts/gotham/gotham-bold-webfont.svg#gotham-bold-webfont") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* default */
+/* line 78, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+body {
+  color: #333;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* line 83, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+p, ul, ol {
+  margin: 0 0 18px;
+  margin: 0 0 1.13rem;
+  letter-spacing: 0.3px;
+}
+
+/* line 87, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+del {
+  color: #ccc;
+}
+
+/* Font family */
+/* line 93, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.navbar-nav a,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2 {
+  font-family: "Univers", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 97, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+body, p, h3, h4, h5, h6 {
+  font-family: "Gotham",'proxima-nova', Helvetica, Arial, sans-serif;
+}
+
+/* Font style */
+/* line 102, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4,
+.h5, .h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: #404040;
+}
+
+/* line 109, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h1 {
+  font-size: 38px;
+  font-size: 2.38rem;
+}
+
+/* line 110, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h2 {
+  font-size: 40px;
+  font-size: 2.5rem;
+}
+
+/* line 111, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h3 {
+  font-size: 22px;
+  font-size: 1.38rem;
+}
+
+/* line 112, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h4 {
+  font-size: 18px;
+  font-size: 1.13rem;
+}
+
+/* line 113, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h5 {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
+/* line 114, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+h6 {
+  font-size: 14px;
+  font-size: 0.88rem;
+}
+
+/* line 116, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.light-weight, .lighter {
+  font-weight: lighter !important;
+}
+
+/* line 117, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.normal-weight {
+  font-weight: normal !important;
+}
+
+/* line 118, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.heavy-weight, .bolder {
+  font-weight: bold !important;
+}
+
+/* line 120, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.byline {
+  color: #BDC3C7;
+}
+
+/* line 121, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.korean p {
+  line-height: 1.68;
+}
+
+/* line 122, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+.warning {
+  color: #f40c5f;
+}
+
+/* line 123, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/typography.scss */
+small {
+  font-size: 14px;
+}
+
+/* Menu bar style */
+/* line 2, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-default {
+  background-color: #fff;
+  border-bottom: 1px solid #d6d6d6;
+  border-radius: 0px;
+}
+
+/* line 7, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top.affix-top {
+  height: 170px;
+}
+
+/* line 10, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top.affix {
+  height: 70px;
+}
+
+/* Logo */
+/* line 17, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.logo {
+  margin-top: 0;
+  float: right;
+}
+
+/* line 18, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top.affix-top .brand.logo-image {
+  margin-top: 30px !important;
+  overflow: hidden;
+  padding-top: 12px;
+}
+
+/* line 23, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top.affix-top .brand.logo-image img {
+  margin-top: 0px;
+}
+
+/* Logo - affix */
+/* line 26, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top .brand.logo-image {
+  height: auto;
+  margin-top: 0 !important;
+  overflow: hidden;
+  padding-top: 0;
+  padding-right: 0;
+}
+
+/* line 33, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top .brand.logo-image img {
+  height: auto;
+  margin-top: 0px;
+  width: 244px;
+}
+
+/* line 38, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-fixed-top .logo small {
+  display: none;
+}
+
+/* Slogan */
+/* Navigation Menu */
+@media (min-width: 992px) {
+  /* line 43, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix-top .logo {
+    opacity: 1;
+    margin-top: 0px;
+  }
+
+  /* line 44, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix .logo {
+    opacity: 0;
+    margin-top: -100px;
+  }
+
+  /* line 45, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix-top .slogan {
+    width: 240px;
+    height: auto;
+    opacity: 0;
+  }
+
+  /* line 46, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix .slogan {
+    width: 240px;
+    height: auto;
+    opacity: 1;
+    padding-top: 20px;
+  }
+
+  /* Navigation Menu */
+  /* line 49, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-header {
+    float: right;
+  }
+
+  /* line 50, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse {
+    float: left;
+    padding: 0;
+  }
+
+  /* line 54, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  ul.navbar-nav {
+    float: left;
+  }
+
+  /* line 55, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix-top ul.navbar-nav {
+    margin: 70px 0 0;
+  }
+
+  /* line 56, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix ul.navbar-nav {
+    margin: 9px 0 0;
+  }
+
+  /* Affix */
+  /* line 57, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-nav > li:first-child > a {
+    padding-left: 0;
+  }
+}
+/* Navigation Menu Link */
+/* line 61, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-nav > li > a {
+  color: #6a6a6a !important;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  padding-right: 20px;
+  margin-right: 14px;
+}
+
+/* Hover */
+/* line 70, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-nav > li > a:hover,
+.navbar-nav > li > a:focus {
+  color: #a0d525 !important;
+}
+
+/* Active */
+/* line 76, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: #a0d525 !important;
+}
+
+/* Mobile menu
+********************************/
+/* line 86, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Button */
+/* line 93, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-toggle,
+.navbar .btn-navbar {
+  background-color: transparent;
+  background-image: none;
+  border-radius: 1px;
+  -webkit-transform: translate3d(0, 0, 0);
+  /* iOS boost & fix flicker */
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  border-width: 0;
+  height: 44px;
+  padding: 8px 10px !important;
+}
+
+/* Button Hover */
+/* line 112, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus,
+.navbar .btn-navbar:hover,
+.navbar .btn-navbar:focus,
+.navbar .btn-navbar:active,
+.navbar .btn-navbar.active,
+.navbar .btn-navbar.disabled,
+.navbar .btn-navbar[disabled] {
+  background-color: transparent;
+}
+
+/* Stripe Icon */
+/* line 118, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-toggle .icon-bar,
+.navbar .btn-navbar .icon-bar {
+  background-color: #ccc !important;
+  height: 4px;
+  margin: 4px 0;
+  width: 24px;
+}
+
+/* Animation */
+/* line 126, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-toggle {
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  border-radius: 0;
+}
+
+/* line 127, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+.navbar-toggle.collapsed {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  border-radius: 24px;
+}
+
+/* Mobile Menu - Breakpoint sm */
+@media (max-width: 991px) {
+  /* Navbar position */
+  /* line 135, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top {
+    position: absolute;
+    height: 120px !important;
+  }
+
+  /* Fixed menu is not compatible with iOS5/6 */
+  /* Menu */
+  /* line 141, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse {
+    margin-top: 0px;
+    background: #fff;
+    max-height: none;
+    text-align: center;
+  }
+
+  /* line 147, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  /* List */
+  /* line 153, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav li {
+    border-bottom: 1px solid #ddd;
+  }
+
+  /* line 156, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav li a {
+    color: #666666 !important;
+  }
+
+  /* line 159, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav li:first-child {
+    border-top: 1px solid #ddd;
+  }
+
+  /* Dropdown */
+  /* line 165, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav .dropdown-menu li {
+    border: 0;
+  }
+
+  /* line 168, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav li.divider {
+    display: none;
+  }
+
+  /* line 172, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .dropdown-header {
+    font-size: 12px;
+    padding: 3px 20px !important;
+  }
+
+  /* line 177, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .dropdown-menu > li > a {
+    padding: 10px 20px !important;
+    line-height: 1.42857 !important;
+  }
+
+  /* line 181, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav li a {
+    color: #CCCCCC;
+  }
+
+  /* line 195, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus,
+  .navbar-nav li.dropdown.open > .dropdown-toggle,
+  .navbar-nav li.dropdown.active > .dropdown-toggle,
+  .navbar-nav li.dropdown.open.active > .dropdown-toggle,
+  .navbar-nav li.dropdown > .dropdown-toggle:hover,
+  .navbar-nav li.dropdown.open > .dropdown-toggle:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    background-color: #555555;
+    color: #CCCCCC;
+  }
+
+  /* Hover and Active */
+  /* line 205, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-collapse .navbar-nav > li > a:focus,
+  .navbar-collapse .navbar-nav > li > a:hover,
+  .navbar-collapse .navbar-nav > .active > a,
+  .navbar-collapse .navbar-nav > .active > a:hover,
+  .navbar-collapse .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    opacity: 0.8 !important;
+  }
+
+  /* line 209, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-nav li.dropdown > .dropdown-toggle .caret {
+    border-top-color: #999 !important;
+    border-bottom-color: #999 !important;
+  }
+}
+@media (max-width: 991px) {
+  /* line 219, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-brand {
+    float: none;
+  }
+
+  /* line 221, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .logo {
+    float: none;
+    margin: 10px 0 0 15px;
+    height: 100px;
+  }
+
+  /* line 226, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .logo-image {
+    height: 100px;
+  }
+
+  /* line 229, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix-top .brand.logo-image img {
+    height: auto;
+    margin-top: 0;
+    width: 180px;
+  }
+
+  /* line 234, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-header {
+    height: 120px;
+  }
+
+  /* line 237, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top .container {
+    width: 100% !important;
+  }
+
+  /* line 241, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top.affix-top .brand.logo-image,
+  .navbar-fixed-top .brand.logo-image {
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+
+  /* line 245, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .navbar-fixed-top .brand.logo-image img {
+    margin-top: 0 !important;
+  }
+
+  /* line 249, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/header.scss */
+  .slogan {
+    display: none;
+  }
+}
+/* Footer style */
+/* line 2, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+#footer {
+  position: relative;
+  background: #fff;
+  color: #404041;
+}
+
+/* line 7, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+#footer .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* line 13, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+#footer a,
+#footer a:active {
+  color: #404041;
+  opacity: 1;
+}
+
+/* line 17, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+#footer a:hover {
+  opacity: 0.8;
+}
+
+/* Privacy link */
+/* line 23, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+#footer .btn-link {
+  color: #404041;
+  font-size: 12px;
+  margin-top: -10px;
+  padding: 0 !important;
+  text-transform: none;
+}
+
+/* SNS Icon */
+/* line 32, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox div {
+  display: block;
+  float: left;
+  margin-bottom: 20px;
+}
+
+/* line 33, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox img {
+  height: auto;
+}
+
+/* line 34, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-01 img {
+  width: 130px;
+  margin-right: 68px;
+}
+
+/* line 35, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-02 img {
+  width: 207px;
+  margin-right: 68px;
+}
+
+/* line 36, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-03 img {
+  width: 170px;
+  margin-right: 75px;
+}
+
+/* line 37, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-04 {
+  margin-right: 12px;
+}
+
+/* line 38, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .sns-icon img {
+  width: 44px;
+  margin-right: 12px;
+}
+
+/* line 41, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-05 p {
+  color: #404041;
+  font-size: 11px !important;
+  font-weight: lighter;
+  letter-spacing: 0.4px;
+  margin-bottom: 0;
+}
+
+/* line 48, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-05 strong {
+  font-size: 11px !important;
+}
+
+/* line 49, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+.footerbox .footerbox-05 small {
+  font-size: 10px !important;
+}
+
+/* Responsive */
+@media (min-width: 992px) {
+  /* line 54, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox div:last-of-type {
+    float: right;
+  }
+
+  /* line 55, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .footerbox-05 {
+    width: 260px;
+    margin-top: -3px;
+  }
+
+  /* line 56, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  #footer .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 767px) {
+  /* line 61, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox div {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  /* line 62, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox img {
+    margin-right: 0 !important;
+  }
+}
+@media (max-width: 1199px) {
+  /* SNS Icon */
+  /* line 69, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox img {
+    height: auto;
+  }
+
+  /* line 70, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .footerbox-01 img {
+    margin-right: 22px;
+  }
+
+  /* line 71, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .footerbox-02 img {
+    margin-right: 22px;
+  }
+
+  /* line 72, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .footerbox-03 img {
+    margin-right: 22px;
+  }
+
+  /* line 73, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .footerbox-04 {
+    margin-right: 22px;
+  }
+
+  /* line 74, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .sns-icon img {
+    width: 44px;
+    margin-right: 10px;
+  }
+}
+@media (max-width: 767px) {
+  /* line 79, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/footer.scss */
+  .footerbox .footerbox-05 {
+    margin-top: -3px;
+    text-align: center;
+    width: 100%;
+  }
+}
+/* Button hover style */
+/* line 2, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/buttons.scss */
+.btn {
+  -webkit-transition: all 250ms ease;
+  -moz-transition: all 250ms ease;
+  transition: all 250ms ease;
+  -webkit-backface-visibility: hidden;
+  /* Safari Flicker Fix #2 */
+  -webkit-transform: translateZ(0);
+  font-weight: bold;
+  border: 0;
+  padding: 9px 22px;
+  height: 40px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+/* line 13, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/buttons.scss */
+.btn:hover {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  /* IE 8 */
+  filter: alpha(opacity=80);
+  /* IE7 */
+  opacity: 0.8;
+}
+
+/* line 21, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/buttons.scss */
+.btn-info {
+  border: 2px solid #72C6A2 !important;
+  box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF !important;
+  background: #fff !important;
+  color: #72C6A2 !important;
+  margin-right: 10px;
+  border-radius: 6px !important;
+}
+
+/* line 30, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/buttons.scss */
+.btn-default {
+  border: 2px solid #A0D525 !important;
+  box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF !important;
+  background: #fff !important;
+  color: #A0D525 !important;
+  margin-right: 10px;
+  border-radius: 6px !important;
+}
+
+/* line 39, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/buttons.scss */
+.btn-inverse {
+  border: 2px solid #fff !important;
+  box-shadow: 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041 !important;
+  background: #404041 !important;
+  color: #fff !important;
+  margin-right: 10px;
+  border-radius: 6px !important;
+}
+
+/* Forms
+-------------------------------------------*/
+/* line 3, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+form {
+  margin-bottom: 10px;
+}
+
+/* line 5, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+form:before,
+form:after {
+  content: " ";
+  display: table;
+}
+
+/* line 6, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+form:after {
+  clear: both;
+}
+
+/* line 8, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group input.form-control {
+  height: 45px;
+  border-radius: 0;
+  background: #f1f1f1;
+}
+
+/* line 14, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group input:disabled {
+  background: #f1f1f1 !important;
+  color: #bbb;
+}
+
+/* line 19, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-inline {
+  display: inline-block !important;
+}
+
+/* Form with half width & Inline (in desktop only) */
+@media (min-width: 992px) {
+  /* line 24, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+  .form-half {
+    width: 48.5%;
+    display: inline-block;
+    margin-right: 30px;
+    float: left;
+  }
+
+  /* line 30, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+  form .last-child {
+    margin-right: -4px !important;
+  }
+}
+/* Three dropdown boxes */
+/* line 34, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group.form-half.box-3 .select-box {
+  width: 32% !important;
+  margin-right: 3px;
+}
+
+/* line 35, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group.form-half.box-3 .select-box:last-child {
+  margin-right: 0;
+}
+
+/* Form agreement box
+-------------------------------------------*/
+/* line 41, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-agreement {
+  background: #f1f1f1;
+  padding: 30px;
+  border: 1px solid #ddd;
+  color: #999;
+  height: 200px;
+  overflow: auto;
+  width: 100%;
+  font-weight: bold;
+}
+
+/* line 51, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group.form-agreement {
+  margin-bottom: 50px;
+}
+
+/* Styling Select box
+---------------------------------- */
+/* line 56, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group select {
+  /* 1. Reset box */
+  border: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  /* 2. Remove selectbox arrow FF */
+  text-indent: 0.01px;
+  text-overflow: '';
+}
+
+/* 3. Remove selectbox arrow IE */
+/* line 68, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group select::-ms-expand {
+  display: none;
+}
+
+/* 4. Add new style */
+/* line 71, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group select {
+  float: left;
+  height: 48px;
+  min-width: 100%;
+  background: #fff;
+  border-radius: 3px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+/* 5. Add arrow */
+/* line 82, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+.form-group.select-box:after {
+  content: " ";
+  display: inline-block;
+  float: right;
+  margin: -40px 20px 0 0;
+  /* Arrow bottom */
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #666666;
+}
+
+/* 6 Cross browsing FIX - Webkit only */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 98, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/forms.scss */
+  .form-group select {
+    padding: 0px 28px 0px 12px !important;
+  }
+}
+/* Page Header with Pattern
+--------------------------------- */
+/* line 3, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.pattern-bg {
+  background-image: -webkit-radial-gradient( rgba(0, 0, 0, 0.05) 15%, rgba(0, 0, 0, 0) 20%);
+  background-image: radial-gradient(   rgba(0, 0, 0, 0.05) 15%, rgba(0, 0, 0, 0) 20%);
+  background-size: 10px 10px;
+  text-align: center;
+  padding: 60px 0;
+}
+
+/* line 9, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.pattern-bg h2 {
+  font-size: 64px;
+  font-size: 4rem;
+  color: #fff;
+  padding: 0 !important;
+}
+
+/* Page Header
+--------------------------------- */
+/* line 19, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.page-header {
+  border: 0;
+  padding: 52px 0 40px;
+  margin: 0;
+}
+
+/* line 24, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.page-header h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* line 28, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.page-header .byline {
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Normal Page Header inside Panel
+--------------------------------- */
+/* line 37, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.page-header.panel {
+  text-align: left;
+}
+
+/* Page Header Box
+--------------------------------- */
+/* line 42, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.page-header.header-box {
+  border-top: 1px solid #CCCCCC;
+  border-bottom: 1px solid #CCCCCC;
+  margin: 0 -60px;
+  padding: 48px 60px;
+  text-align: left !important;
+}
+
+/* line 49, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.page-header.header-box h2 {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Top Header Banner
+--------------------------------- */
+/* line 58, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.top-header {
+  background-color: #000;
+  font-weight: bold;
+  height: 200px;
+  line-height: 1.3;
+  margin: 0px -15px;
+}
+
+/* Text layer */
+/* line 67, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.top-header .top-header-text {
+  position: absolute;
+  z-index: 1;
+  padding: 32px 15px 0;
+}
+
+/* line 72, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.top-header h1 {
+  font-size: 32px;
+  color: #fff;
+}
+
+/* line 73, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.top-header p {
+  font-size: 22px;
+  color: #999;
+}
+
+/* Image BG layer */
+/* line 76, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.top-header .top-header-background {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+}
+
+/* Desktop only */
+@media (min-width: 992px) {
+  /* line 87, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+  .top-header {
+    margin: -60px -60px 25px;
+  }
+
+  /* line 88, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+  .top-header .top-header-text {
+    padding: 32px 60px 0;
+  }
+}
+/* Section Header
+--------------------------------- */
+/* line 96, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.section-header {
+  font-size: 24px;
+  font-weight: bold;
+  color: #666;
+  border-top: 3px solid #666;
+  border-bottom: 1px solid #666;
+  padding: 10px 0 !important;
+}
+
+/* line 104, /Users/alex/Desktop/NOGGI/Temp-page/assets/parking/css/_include/section-header.scss */
+.section-header .view-more {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  float: right;
+  margin-top: 12px;
+}
+
+/*
+
+
+#video-bg-container video { width: 1100px; }
+
+.promotion .page-banner { display: none; }
+
+.footer-info {  visibility: hidden; }
+
+.footer-menubar hr { display: none;}
+h2.text-box { margin: 20px 0 30px; }
+
+.banner, .page-header, footer.content-info {
+    display: block;
+}
+
+.btn-info {
+    border: 2px solid #72C6A2 !important;
+    box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF !important;
+    background: #fff !important;
+    color: #72C6A2 !important;
+    font-weight: bold;
+    width: 90px;
+    margin-right: 10px;
+    border-radius: 6px !important;
+}
+
+.btn-default {
+    border: 2px solid #9FD424 !important;
+    box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF !important;
+    background: #fff !important;
+    color: #9FD424 !important;
+    font-weight: bold;
+    width: 90px;
+    margin-right: 10px;
+    border-radius: 6px !important;
+}
+
+.btn-inverse {
+    border: 1px solid #fff !important;
+    box-shadow: 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041 !important;
+    background: #404041 !important;
+    color: #fff !important;
+    font-weight: bold;
+    width: 90px;
+    margin-right: 10px;
+    border-radius: 6px !important;
+}
+
+.text-white * { color: #fff; }
+
+.parallax { position: relative !important; background-size: cover; }
+
+.section-header.full-width { height: 390px; padding: 80px 0; }
+.section-header.full-width.one { background-color: #9fd424; }
+.section-header.full-width.one .span7 img { width: 300px; padding: 50px 80px ; }
+
+
+.section-header.full-width.two { background-color: #000; background-image: url(http://simonalex.com/dev/noggi/files/2014/01/BANNER1.jpg); }
+.section-header.full-width.three { background-color: #fff; }
+.section-header.full-width.three .span7 img { width: 80px; padding: 50px 200px; text-align: center; }
+
+.section-header.full-width.four { background-color: #72c6a2; background-image: url(http://simonalex.com/dev/noggi/files/2014/01/BANNER2.jpg);
+
+    background-position: 140% top !important;
+    background-repeat: no-repeat;
+    background-size: 808px 400px;
+}
+
+
+.section-header.full-width.five { background-color: #000; background-image: url(http://simonalex.com/dev/noggi/files/2014/01/BANNER3.jpg); color: #fff; }
+.section-header.full-width.six { background-color: #9fd424; }
+.full-width {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+#fancybox-bg-w,
+#fancybox-bg-s,
+#fancybox-bg-e,
+#fancybox-bg-n,
+#fancybox-bg-sw,
+#fancybox-bg-nw,
+#fancybox-bg-se,
+#fancybox-bg-ne { display:none;}
+
+ .dark-theme-left { border: 1px solid #ccc; background: #333; color: #fff; max-width: 980px; max-height: 610px; overflow: hidden;}
+.dark-theme-left h3, .dark-theme-left p { color: #fff; }
+
+.dark-theme-left .span4 { padding: 30px; }
+.dark-theme-left .span8 {
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 1000px;
+    width: 65.812%;
+}
+
+.woocommerce form .form-row input.input-text { height: 34px !important; }
+
+
+#comments, .sidebar, #sidebar { display: none !important }
+.banner {
+    margin-top: 40px;
+    text-align: center;
+}
+.nav-tabs > li, .nav-pills > li {
+  float: none !important;
+  display: inline-block;
+}
+h1.site-title { margin: 30px 0 60px; }
+.site-description { display: none; }
+.nav-main { border: 0 !important; }
+
+ul#menu-nav {
+    padding: 0;
+    margin-left: 0 !important;
+    width: 100%;
+    list-style-type: none;
+    text-align: justify;
+}
+
+ul#menu-nav:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+ul#menu-nav li { display: inline-block; }
+ul#menu-nav li a { font-size: 22px; text-transform: uppercase; color: #333333; padding: 0 0 0 0; }
+
+
+
+
+.hover-box img { width: 100%; height: auto; }
+
+.hover-box {
+  width: 100%;
+  max-height: 330px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  margin-bottom: 30px;
+  }
+
+.hover-box * { color: #fff; }
+
+.hover-box a {
+  display: block;
+  height: 100%;
+  margin: 0 0 0px 0;
+  }
+
+.hover-box a:hover { opacity: 1; }
+
+  .hover-box div {
+    position: relative;
+    color: white;
+    height: 100%;
+    min-height: 320px;
+    padding: 30px;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+
+-webkit-transition:  all 250ms ease-in-out;
+-moz-transition:  all 250ms ease-in-out;
+-o-transition: all 250ms ease-in-out;
+transition:  all 250ms ease-in-out;
+
+    }
+    .hover-box a:hover div {
+        opacity: 1;
+        margin-top: -100%;
+	}
+
+
+.hover-box img {
+	-webkit-transition:  all 250ms ease-in-out;
+	-moz-transition:  all 250ms ease-in-out;
+	-o-transition: all 250ms ease-in-out;
+	transition:  all 250ms ease-in-out;
+
+}
+
+.hover-box a:hover img {
+-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+-o-transform: scale(1.2);
+transform: scale(1.2);
+}
+
+
+h2.text-center { text-transform: uppercase; }
+
+
+
+.branch-list .postbox .description {
+  display: table;
+  height: 100%;
+   width: 100%;
+}
+.branch-list .postbox h3 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.read-more {
+    border-color: transparent #a0d525 transparent transparent;
+    border-style: solid;
+    border-width: 0 60px 60px 0;
+    height: 0;
+    margin-left: -60px !important;
+    padding: 0 !important;
+    position: absolute;
+    width: 0;
+    right: 0;
+}
+
+.read-more span {
+    color: #FFFFFF;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: bold;
+    height: 93px;
+    left: 0;
+    margin: 0 !important;
+    position: relative;
+    text-align: center;
+    top: 5px;
+    width: 80px;
+}
+
+
+
+
+
+
+
+
+.branch-list .postbox h3 {
+ color: #fff;
+ margin: 0;
+}
+
+.branch-list .postbox article {
+	height: 100%;
+}
+
+.branch-list .postbox article a:hover { opacity: 1; }
+
+.branch-list .postbox .listbox {
+   display: table;
+   height: 100%;
+   width: 100%;
+   background: rgba(0,0,0,0.7);
+   margin-top: -100%;
+   opacity: 1;
+   float: left;
+}
+
+.branch-list .postbox .list-thumbnail { width: 100%; height: 100%; background-color: #ccc; }
+
+.branch-list .postbox:hover .listbox {
+   margin-top: 0;
+   opacity: 0;
+}
+
+
+.branch-list .postbox:hover .list-thumbnail img {
+-webkit-transform: scale(1.25);
+-moz-transform: scale(1.25);
+-o-transform: scale(1.25);
+transform: scale(1.25);
+}
+
+
+
+.branch-list .postbox article h3 {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.branch-list .hover-box .description { padding: 0 !important; min-height: 100%; margin-top: -100% !important; opacity: 1; }
+.branch-list .hover-box:hover .description { margin-top: 0% !important; opacity: 0 !important; }
+
+.branch-list .hover-box .tag-coming-soon .description,
+.branch-list .hover-box:hover .tag-coming-soon .description{ margin-top: -100% !important; opacity: 0.2 !important; }
+
+
+h3 { font-size: 1.63rem; }
+*/

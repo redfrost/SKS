@@ -1,0 +1,49 @@
+{% include head.html %}
+
+<body id="top" class="{{site.layoutStyle}}" data-spy="scroll">
+	{% if site.preLoader == 'no' %}
+	<div id="master-wrap">
+	{% else %}
+	<div id="master-wrap" style="opacity: 0;">
+	{% endif %}
+
+		<!-- Contents -->
+		<div class="main-content">
+
+			<section id="confirmation-header">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3><i class="icon-check first-child"></i> YOUR ORDER DETAIL HAS BEEN SENT TO YOUR EMAIL ADDRESS.</h3>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<section id="confirmation">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h2>PAYMENT <i class="icon-warning"></i></h2>
+							<p>PLEASE MAKE YOUR PAYMENT <strong>WITHIN 24HOURS ($35)</strong> TO THE ACCOUNT BELOW THROUGH <strong>EFT</strong></p>
+							<p><strong>BANK : NAB<br />
+							ACCOUNT NAME : SKS SERVICES PTY LTD<br />
+							BSB : 082 201<br />
+							ACCOUNT NUMBER : 14 670 4246<br />
+							REFERENCE : YOUR ORDER NAME</strong></p>
+							<p>AND SEND THROUGH YOUR REMITTANCE TO <a class="fade-hover" href="mailto:valentine@noggi.com.au?Subject=Payment%20Detail" target="_top">VALENTINE@NOGGI.COM.AU</a></p>
+							<p>AND YOU WILL RECEIVE A CONFIRMATION EMAIL WITHIN 24 HOURS.</p>
+							<h2>THANK YOU!</h2>
+
+							<a class="btn btn-default" href="http://noggi.com.au/bemyvalentine/">HOME</a>
+							<img class="logo" src="assets/img/logo.png" alt="Noggi" />
+						</div>
+					</div>
+				</div>
+			</section>
+
+		</div><!-- /.main-content -->
+
+		{% include footer.html %}
+

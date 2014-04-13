@@ -1,0 +1,128 @@
+/* ORDER FORM
+---------------------------------- */
+#order-form {
+  padding: 114px 0 0 0;
+	font-size: 16px;font-size: 1rem;
+	}
+	#order-form ul {
+		padding: 0;
+		}
+
+#order-form legend { display: none; }
+#order-form label {
+	font-weight: 600;
+	letter-spacing: 1px;
+	margin-bottom: 10px;
+	width: 100%;
+	}
+	#order-form .set-selection label { width: 100px; }
+	#order-form .set-selection, #order-form .set-selection .form-group { margin-bottom: -8px; }
+	#order-form section h3 { margin: 34px 0; }
+
+	#order-form li { margin-bottom: 27px; }
+	#order-form li.row { margin-bottom: 0px; }
+	#order-form input.form-control { height: 45px; }
+
+	#order-form .form-control, #order-form select {
+		border-radius: 0;
+		border: 0;
+		background: #fff;
+		font-weight: 600;
+		}
+
+
+.set-selection .choice {
+	font-size: 28px;font-size: 1.75rem;
+	font-weight: 600;
+	font-family: "Univers", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+	}
+
+	#order-form select {
+		font-size: 16px;font-size: 1rem;
+		padding-top: 13px;
+		color: #404041;
+		}
+
+	.radio-inline {
+		width: 110px;
+		margin-right: 20px;
+		padding-left: 0px;
+		}
+		.radio-inline .radio {
+			float: right !important;
+			padding:0;
+			margin-top: 12px !important;
+			}
+
+
+
+textarea.form-control { padding: 20px 25px; }
+
+/* Placeholder */
+#order-form input::-webkit-input-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase; }/* Safari, Chrome */
+#order-form input:-moz-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase;}/* Firefox 18- */
+#order-form input::-moz-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase; }/* Firefox 19+ */
+#order-form input:-ms-input-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase; }/* IE */
+
+#order-form textarea::-webkit-input-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase; }/* Safari, Chrome */
+#order-form textarea:-moz-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase;}/* Firefox 18- */
+#order-form textarea::-moz-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase; }/* Firefox 19+ */
+#order-form textarea:-ms-input-placeholder { color: #eb9a9d; font-size:16px;font-size:1rem; text-transform: uppercase; }/* IE */
+
+
+
+
+
+
+
+
+.form-inline { display: inline-block !important; }
+
+
+/* Styling Select box
+---------------------------------- */
+	.form-group select {
+
+		/* 1. Reset box */
+    border: 0;
+		@include appearance(none);
+
+		/* 2. Remove selectbox arrow FF */
+		text-indent: 0.01px;
+  	text-overflow: '';
+		}
+
+		/* 3. Remove selectbox arrow IE */
+		.form-group select::-ms-expand { display: none; }
+
+		/* 4. Add new style */
+		.form-group select {
+			float: left;
+			height: 45px;
+			min-width: 100%;
+			background: #fff;
+			border-radius: 3px;
+	    padding: 12px;
+			margin-bottom: 15px;
+			}
+
+		/* 5. Add arrow */
+		.form-group.select-box:after {
+			content: " ";
+			display: inline-block;
+			float: right;
+			margin: -40px 20px 0 0;
+
+			/* Arrow bottom */
+			width: 0px;
+			height: 0px;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-top: 6px solid #666666;
+			}
+
+		/* 6 Cross browsing FIX - Webkit only */
+		@media screen and (-webkit-min-device-pixel-ratio:0){
+			.form-group select { padding: 0px 28px 0px 12px !important }
+			}

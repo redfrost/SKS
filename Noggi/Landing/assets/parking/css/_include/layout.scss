@@ -1,0 +1,63 @@
+/* Basic layout
+------------------------------------ */
+body {
+  margin-top: 120px;
+	background: #fff;
+	}
+	/* Liquid responsive width */
+	.responsive .container {
+		width: 100%;
+		}
+		section {
+			position: relative;
+			padding: 30px 0;
+			}
+
+
+#featured {
+	background: url("../img/bg-featured.jpg") no-repeat scroll center center #333335;
+	padding-top: 120px;
+	padding-bottom: 70px;
+	margin-bottom: 0;
+}
+
+
+#catering {
+	background-color: #72C6A2;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-size: 600px 400px;
+	height: 390px;
+	padding: 100px 0 110px;
+	}
+	@media (min-width: 992px) {
+		#catering {
+			background-image: url("../img/bg-catering.jpg");
+	 }
+	}
+
+
+#franchising {
+	background: url("../img/bg-franchise.jpg") no-repeat scroll center 500px #676767;
+	padding: 100px 0 110px;
+	height: 390px;
+	color: #fff;
+	}
+	@media (max-width: 480px) {
+		#franchising {
+		    padding: 30px 0 110px;
+		}
+	}
+
+#franchising h2, #franchising p { color: #fff;}
+#stores { background: #fff;  }
+#contact { background: #a0d525; padding: 100px 0 110px; }
+
+.parallax { position: relative !important; }
+
+
+.warning { background: #e72b37; }
+.warning img { width: 20px; }
+.warning img.left { float: left; }
+.warning img.right { float: right; }
+.warning h3 { color: #fff; text-transform: uppercase; font-size: 0.88rem; text-align: center; }

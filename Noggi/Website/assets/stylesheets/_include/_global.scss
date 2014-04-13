@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+html { font-size: 100% !important; }
+
+/* Link */
+a, a:focus {
+	text-decoration: none;
+	opacity: 1;
+	}
+	a:hover {
+		zoom: 1;
+		filter: alpha(opacity=60);
+		opacity: 0.6;
+		text-decoration: none;
+		}
+		/* Remove Firefox selection dot */
+		a, a:focus, a:active, a:hover, object, embed { outline: none !important; }
+		:-moz-any-link:focus { outline: none; }
+		input::-moz-focus-inner { border: 0; }
+		:focus { outline: 0; }
+
+		/* Remove Firefox Dropdown selection dot */
+		select:-moz-focusring { color: transparent; text-shadow: 0 0 0 #000; }
+
+
+/* Line */
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 30px 0 20px; height: 0; }
+
+
+/* Image */
+a img { border: none; }
+img { width: 100%; height:auto; -ms-interpolation-mode: bicubic;} /* max-width:100% causes IE8 bug */
+
+
+/* SELECTED TEXT */
+::selection { background: #ff5e99; color: #FFFFFF; }
+::-moz-selection { background: #ff5e99; color: #FFFFFF; }
+
+
+/* Position */
+.left { float: left !important; }
+.right { float: right !important; }
+.text-left { text-align: left !important; }
+.text-right { text-align: right !important; }
+.text-center { text-align: center !important; }
+.hide { display: none; }
+.highlight { background: #ff0; }
+.first-child { margin-left: 0 !important; }
+.last-child { margin-right: 0 !important; }
+.full-width { width: 100%; }
+.last-item { margin: 0px !important; }
+
+
+/* Wordwrap */
+div { word-wrap: break-word; }
+
+
+/* clearfloat */
+.clear, .clearfloat {
+	clear: both;
+	font-size: 1px;
+	height: 1px;
+	line-height: 0;
+	}
+
+
+/* Preloader */
+#preloader {
+	width:200px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-100px 0 0 -100px;
+	-webkit-transform: translate3d(0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateZ(0);
+	}
+	#preloader,.bar { border-radius: 10px !important; }
+
+
+/* =============================================================================
+   FIX
+============================================================================= */
+
+/* Firefox opacity jog fix */
+.fade-hover img { background: #fff; }
+
+/* IE Flicker fix */
+html { filter: expression(document.execCommand("BackgroundImageCache", false, true)); }
+
+/* Thumbnails box margin left fix */
+.thumbnails { margin-left: 0; }
+
+/* Responsive Google Map */
+.map iframe { width: 100% !important; }
+
+/* Video embed frame */
+iframe { border: 0; }
+
+/* Bootstrap Fix Lines on Button (Retina) */
+.btn:hover { background-position: inherit; }
+
+/* IE Alert */
+.ie-warning {
+	position: absolute;
+	top: 0;
+	z-index: 999999;
+	width: 100%;
+	text-align: center;
+	}
+

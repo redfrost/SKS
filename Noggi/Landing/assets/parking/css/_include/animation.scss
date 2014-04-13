@@ -1,0 +1,20 @@
+/* Normal Fade Animation */
+.logo, .slogan, .animation, .navbar-toggle {
+	@include transition (all 350ms cubic-bezier(0.485, 0.000, 0.250, 1.000));
+	/* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/
+	-webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	-webkit-transform: translateZ(0);
+	}
+
+/* Fast  Fade Animation */
+.navbar-fixed-top .brand.logo-image img,
+.navbar-fixed-top ul.navbar-nav,
+.navbar-fixed-top #language-switcher,
+.navbar-fixed-top, .navbar-brand, .animation-fast, .brand, .fade-hover, .nav li a, .sns-icons li, .brand .icon-reorder:before, .maker a, #footer li a, .back-top a {
+	@include transition (all 200ms ease);
+	/* -webkit-transform: translate3d(0, 0, 0); Webkit Hardware Acceleration*/
+	-webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	-webkit-transform: translateZ(0);
+	}
+
+

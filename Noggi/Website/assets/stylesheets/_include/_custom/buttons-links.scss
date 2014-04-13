@@ -1,0 +1,58 @@
+/* Custom BTN Style */
+
+	/* Custom BTN Colors */
+	.btn-default { background: #EBEBEB !important; }
+	.btn-primary { background: #006DCC !important; }
+	.btn-success { background: #5BB75B !important; }
+	.btn-info    { background: #49AFCD !important; }
+	.btn-warning { background: #FAA732 !important; }
+	.btn-danger  { background: #DA4F49 !important; }
+
+
+/* License Popover */
+.footer-menu-box .popover {
+    width: 400px;
+	}
+	.footer-menu-box .popover-title {
+		color: #666;
+		}
+	.footer-menu-box .popover-content {
+		font-size: 0.63rem;
+		line-height: 1rem;
+		color: #666;
+		}
+
+
+
+.btn-lg {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 5px 0px;
+	width: 105px;
+	border-radius: 6px !important;
+	margin-right: 10px;
+	background: #404041;
+	box-shadow: 0 0 0 2px #404041;
+	border: 2px solid #fff;
+	}
+	.btn-lg,
+	.btn-lg:hover,
+	.btn-lg:focus,
+	.btn-lg:active {
+		color: #fff;
+		}
+
+#about .btn-lg,
+#contact .btn-lg {
+	background: #fff;
+	color: #a0d525;
+	border: 2px solid #a0d525;
+	box-shadow: 0 0 0 2px #fff;
+	}
+
+#catering .btn-lg {
+	background: #fff;
+	color: #72c6a2;
+	border: 2px solid #72c6a2;
+	box-shadow: 0 0 0 2px #fff;
+	}

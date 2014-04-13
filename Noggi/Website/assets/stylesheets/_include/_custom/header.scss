@@ -1,0 +1,137 @@
+/* Navbar */
+.navbar.nav-standard {
+	width: 100%;
+	position: absolute;
+	z-index: 999 !important;
+	}
+
+
+
+/* Logo */
+.navbar.nav-standard {
+	z-index: 999 !important;
+	width: 100%;
+	position: absolute;
+	}
+
+	.logo-box {
+		float: left;
+	}
+
+
+		.navbar-header .navbar-brand img {
+			width: 100%;
+			max-width: 120px;
+			}
+
+			.navbar.nav-standard .navbar-nav ,
+			.navbar.nav-standard .navbar-nav > li > a {
+				background: none;
+				border: 0;
+				font-size: 20px;
+				color: #333132;
+				}
+				.navbar.nav-standard .navbar-nav > .active > a,
+				.navbar.nav-standard .navbar-nav > .active > a:hover,
+				.navbar.nav-standard .navbar-nav > .active > a:focus {
+					background: none;
+					}
+
+/* Mobile toggle */
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+	background-color: #A0D525;
+	}
+	.navbar-default .navbar-toggle:hover .icon-bar,
+	.navbar-default .navbar-toggle:focus .icon-bar {
+		background-color: #FFFFFF;
+		}
+
+
+
+/* Responsive */
+@media (max-width: 991px){
+body { margin-top: 78px; }
+	.navbar.nav-standard { border-color: #87b911; top: 50px; }
+	.navbar-header {
+		min-height: 64px;
+		margin-top: 10px;
+		}
+		.navbar.nav-standard .navbar-brand {
+			height: 64px;
+			overflow: hidden;
+			margin-top: -10px;
+		}
+}
+@media (min-width: 992px) {
+	.navbar-header {
+		width: 100%;
+		margin-top: 20px;
+		}
+		.logo-box {
+			float: none;
+		}
+	.navbar.nav-standard .navbar-brand {
+		width: 100%;
+		display: inline-block;
+		text-align: center;
+		height: 133px;
+		overflow: hidden;
+		padding: 0;
+		margin: 0;
+		}
+		.navbar-header .logo-box a img {
+			max-width: 320px !important;
+			}
+			.navbar.nav-standard .navbar-nav {
+			float: left;
+			margin: 56px 0 25px !important;
+			padding: 0 66px;
+			}
+}
+
+
+/* Affix */
+@media (min-width: 992px){
+
+body { margin-top: 348px; }
+.navbar.nav-standard { top: 50px; }
+
+.navbar-header .logo-box {
+	text-align: center;
+}
+
+.navbar-header .navbar-brand:hover img {
+	margin-top: -133px;
+}
+
+
+.navbar-header .navbar-brand {
+	display: block;
+	position: relative;
+	float: none;
+	width: 320px !important;
+	height: 166px;
+	margin: auto;
+	}
+
+
+.navbar.nav-standard.affix { margin-top: -40px; position: fixed; }
+.navbar.nav-standard.affix .navbar-header { margin-top: -80px;  }
+.navbar.nav-standard.affix .navbar-nav {
+	margin-top: 0 !important;
+	background: rgba(255,255,255,0.95);
+	@include animation-duration(600ms);
+	@include animation-fill-mode(both);
+	@include animation-name(fadeInDown);
+	}
+	.navbar.nav-standard.affix .logo-box { display: none; }
+}
+
+
+
+@include keyframes(fadeInDown) {
+	0% { opacity: 0; @include transform(translateY(-20px)); }
+	100% { opacity: 1; @include transform(translateY(0)); }
+	}

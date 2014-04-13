@@ -1,0 +1,108 @@
+		<footer id="footer">
+			<section class="container footerbox">
+
+				<div class="footerbox-01">
+				  <img src="assets/parking/img/footer-spoonme.png" alt="Spoon me&#0153;" />
+				</div>
+
+				<div class="footerbox-02">
+				  <img src="assets/parking/img/footer-lick.png" alt="Lick ferociously, Spoon responsibly" />
+				</div>
+
+				<div class="footerbox-03">
+				  <img src="assets/parking/img/footer-australian.png" alt="Australian Owned" />
+				</div>
+
+				<div class="footerbox-04 sns-links">
+					<a href="http://www.facebook.com/noggiyogurt" class="sns-icon facebook"><img src="assets/parking/img/footer-fb.png" alt="Facebook" /></a>
+					<a href="http://statigr.am/tag/noggi" class="sns-icon instagram"><img src="assets/parking/img/footer-insta.png" alt="Instagram" /></a>
+				</div>
+
+				<div class="footerbox-05 copyright">
+					<p><strong>SKS Services Pty. Ltd.</strong>
+					<small>ABN 11 160 965 024</small></p>
+					<p>16/56 Buffalo Road Gladeville NSW 2111</p>
+					<p>Copyright&copy;Noggi <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</p>
+				</div>
+
+			</section>
+
+		</footer><!-- /#footer -->
+
+</div><!-- /#master-wrap -->
+
+
+		<!-- Preloader -->
+		{% if site.preloader == 'yes' %}
+		<div style="width:200px" class="progress progress-striped active" id="preloader"><div style="width: 100%;" class="bar">LOADING</div></div>
+		{% else %}{% endif %}
+
+
+
+		<div class="bg"></div><!-- BG for iPad -->
+
+
+		<!-- Modal Popup - Insert your code -->
+		<div class="modal fade dark-bg" id="popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		  <div class="modal-dialog">
+		    <div class="modal-content">
+
+					<div class="modal-header">
+		        <button type="button" class="popup-close close" data-dismiss="modal" aria-hidden="true">&times;</button>
+		        <h2 class="modal-title" id="myModalLabel">Available Locations</h2>
+		      </div>
+
+		      <div class="modal-body">
+
+						<a href="mailto:franchising@noggi.com.au?subject=Franchise&nbsp;Enquiry&nbsp;-&nbsp;Canley&nbsp;Heights"><h4>Canley Heights</h4></a>
+						<p>Shop<br />
+						Price from $375,000 + GST</p>
+
+						<a href="mailto:franchising@noggi.com.au?subject=Franchise&nbsp;Enquiry&nbsp;-&nbsp;Bankstown"><h4>Bankstown</h4></a>
+						<p>Shop<br />
+						POA</p>
+
+						<a href="mailto:franchising@noggi.com.au?subject=Franchise&nbsp;Enquiry&nbsp;-&nbsp;Tuggrah"><h4>Tuggrah</h4></a>
+						<p>Kiosk<br />
+						POA</p>
+
+
+		      </div>
+		    </div>
+		  </div>
+		</div><!-- /.modal -->
+
+
+		<!-- Scripts -->
+		<script src="assets/parking/js/jquery.js"></script>
+		<script src="assets/parking/js/base.js"></script>
+		<script src="assets/parking/js/custom.js"></script>
+
+
+		<!-- Plugins -->
+		<script type="text/javascript" src="assets/parking/plugin/plugins.js"></script>
+		<script type="text/javascript" src="assets/parking/plugin/wufoo.js"></script><!-- Form control -->
+		<script type="text/javascript" src="assets/parking/plugin/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+		<script type="text/javascript" src="assets/parking/plugin/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+
+
+	  <!-- IE Warning -->
+	  <!--[if lt IE 9]><div class="ie-warning alert alert-danger alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="assets/parking/stylesheets/ie.css" />
+		<![endif]-->
+
+
+		<!-- Tracking code -->
+		<script>
+			var _gaq=[['_setAccount','{{site.trackingID}}'],['_trackPageview']];
+			(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+			g.src='//www.google-analytics.com/ga.js';
+			s.parentNode.insertBefore(g,s)}(document,'script'));
+		</script>
+
+	</body>
+</html>

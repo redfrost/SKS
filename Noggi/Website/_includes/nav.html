@@ -1,0 +1,39 @@
+<!-- Nav menu -->{% if site.navTopFix == 'yes' %}
+<header class="navbar navbar-default navbar-fixed-top" role="banner">{% else %}
+<header class="navbar navbar-default nav-standard">{% endif %}
+
+	<div class="container">
+
+		<div class="navbar-header">
+
+			<!-- Mobile toggle button -->
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+
+			<!-- Logo -->
+			<div class="logo-box">{% if site.logoType == 'image' %}
+				<a class="navbar-brand logo-image" href="{{site.url}}"><img alt="{{site.name}}" src="assets/images/logo.png"></a>{% else %}
+				<a class="navbar-brand" href="{{site.url}}">{{site.name}} <small>{{site.slogan}}</small></a>{% endif %}
+			</div>
+
+		</div><!-- /.navbar-header -->
+
+
+		<!-- Navigation -->
+		<nav class="navbar-collapse collapse" role="navigation">
+			<ul class="nav navbar-nav">
+				<li class="active"><a href="about.html">About Us</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a class="disabled" href="locations.html">Locations</a></li>
+				<li><a href="catering.html">Catering</a></li>
+				<li><a href="franchising.html">Franchising</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav><!--/.nav-collapse -->
+
+	</div><!-- /.container -->
+</header>

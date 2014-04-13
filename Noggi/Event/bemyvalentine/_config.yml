@@ -1,0 +1,65 @@
+# Default setting
+name:         "Noggi - Valentine's Day"
+slogan:       "MY heart swirls for you"
+description:  "Send Noggi to your love this Valentine's Day"
+url:          "http://noggi.com.au/bemyvalentine/"
+markdown:     rdiscount
+pygments:     true
+sass:
+  syntax: scss # scss|sass
+  style:  compressed # nested|expanded|compact|compressed
+
+
+# Meta
+author:       "SKS Services"
+designer:     "Redrost Design"
+designerURL:  "http://redfrost.com/"
+copyright:    "SKS Services"
+FBAppID:      ""
+keywords:     "Noggi Frozen Yogurt Shop Valentine's Day Event"
+versionInfo:  "1.1"
+
+
+# Site setting
+responsive:   "yes"   # yes|no
+siteWidth:    "1140"
+navTopFix:    "yes"
+logoType:     "image"  # text|image
+mobileApp:	  "no"
+mobileZoom:   "1.0"   # 1.0=disable zoom
+preLoader:	  "no"
+siteIndexing: "no"
+styleTest:    "no"
+
+
+## User setting
+userInfo:
+  businessName: ""
+  userAddress:  ""
+  poBox:        ""
+  phone:        ""
+  fax:          ""
+  userEmail:    "valentine@noggi.com.au"
+  workingHours:	""
+
+
+# Links
+snsLink:
+  link1:   "https://www.facebook.com/noggiyogurt" # Facebook
+  link2:   "http://statigr.am/tag/noggi" # Twitter
+  link3:   "#" # Google+
+  link4:   "#" # Youtube
+  link5:   "#" # LinkedIn
+
+
+# Add-on
+typekitID:    "ieg5weq"
+formLink:     ""
+formID:       "" # wufoo form ID
+disqus:       "" # disqus ID
+trackingID:   "UA-47618343-1" # Google analytics ID
+videoLink:    ""
+
+
+# Footer Note
+footerNote:   ""

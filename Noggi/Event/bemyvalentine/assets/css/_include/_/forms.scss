@@ -1,0 +1,99 @@
+/* Forms
+-------------------------------------------*/
+form { margin-bottom: 10px; }
+	form:before,
+	form:after {content:" ";display:table;}
+	form:after {clear:both;}
+
+.form-group input.form-control {
+	height: 45px;
+	border-radius: 0;
+	background: #f1f1f1;
+  }
+
+.form-group input:disabled {
+	background: #f1f1f1 !important;
+	color: #bbb;
+}
+
+.form-inline { display: inline-block !important; }
+
+
+/* Form with half width & Inline (in desktop only) */
+@media (min-width: 992px) {
+	.form-half {
+		width: 48.5%;
+		display: inline-block;
+		margin-right: 30px;
+		float: left;
+	  }
+		form .last-child { margin-right: -4px !important; }
+}
+
+/* Three dropdown boxes */
+.form-group.form-half.box-3 .select-box { width: 32% !important; margin-right: 3px; }
+.form-group.form-half.box-3 .select-box:last-child { margin-right:0; }
+
+
+
+/* Form agreement box
+-------------------------------------------*/
+.form-agreement {
+	background: #f1f1f1;
+	padding: 30px;
+	border: 1px solid #ddd;
+	color: #999;
+	height: 200px;
+	overflow: auto;
+	width: 100%;
+	font-weight: bold;
+  }
+  .form-group.form-agreement { margin-bottom: 50px; }
+
+
+/* Styling Select box
+---------------------------------- */
+	.form-group select {
+
+		/* 1. Reset box */
+    border: 0;
+		@include appearance(none);
+
+		/* 2. Remove selectbox arrow FF */
+		text-indent: 0.01px;
+  	text-overflow: '';
+		}
+
+		/* 3. Remove selectbox arrow IE */
+		.form-group select::-ms-expand { display: none; }
+
+		/* 4. Add new style */
+		.form-group select {
+			float: left;
+			height: 48px;
+			min-width: 100%;
+			background: #fff;
+			border-radius: 3px;
+	    padding: 12px;
+			margin-bottom: 15px;
+			}
+
+		/* 5. Add arrow */
+		.form-group.select-box:after {
+			content: " ";
+			display: inline-block;
+			float: right;
+			margin: -40px 20px 0 0;
+
+			/* Arrow bottom */
+			width: 0px;
+			height: 0px;
+			border-left: 6px solid transparent;
+			border-right: 6px solid transparent;
+			border-top: 6px solid #666666;
+			}
+
+		/* 6 Cross browsing FIX - Webkit only */
+		@media screen and (-webkit-min-device-pixel-ratio:0){
+			.form-group select { padding: 0px 28px 0px 12px !important }
+			}

@@ -1,0 +1,73 @@
+#gallery.parallax {
+	background-image: url(../images/banner_01.jpg);
+	background-attachment: fixed; /* IE11 must have this */
+	background-position: 50% 0;   /* IE11 must have this */
+	position: relative ;
+}
+
+
+/* Jumbotron IE8 */
+.jumbotron { min-height: 300px\9 !important;}
+
+/* Jumbotron IE9 */
+.jumbotron { min-height: 600px\9\0 !important;}
+
+/* Select Box */
+.form-group.select-box:after { border: 0\9; }
+#mailing .form-box .form-group input { padding-top: 8px\9 !important;}
+
+.page-header p.byline { color: #eee\9; !important; }
+.jumbotron { background-color: #F40C5F !important; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; }
+.page-header { -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; }
+.page-header.pink   { background-color: #F40C5F\9 !important; }
+.page-header.blue   { background-color: #00b2e2\9 !important; }
+.page-header.orange { background-color: #ff541c\9 !important; }
+.page-header.purple { background-color: #7729ed\9 !important; }
+.page-header.green  { background-color: #2fcf8a\9 !important; }
+.page-header.grey   { background-color: #323132\9 !important; }
+.page-header.yellow { background-color: #ffcc00\9 !important; }
+#mailing { background-color: #2fcf8a\9 !important; width: 100%\9 !important; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=90)"; }
+
+
+/* FB Gallery IE9 */
+.fb-gallery-box .fbAlbumImage { width: 20%\9; overflow: hidden\9; }
+@media (max-width: 320px) { .fb-gallery-box .fbAlbumImage { height: 64px\9 !important; } }
+@media (min-width: 321px) and (max-width: 479px) {  .fb-gallery-box .fbAlbumImage { height: 80px\9 !important; } }
+@media (min-width: 480px) and (max-width: 767px) {  .fb-gallery-box .fbAlbumImage { height: 95px\9 !important; } }
+@media (min-width: 768px) and (max-width: 991px) {  .fb-gallery-box .fbAlbumImage { height: 150px\9 !important;} }
+@media (min-width: 992px) and (max-width: 1279px) { .fb-gallery-box .fbAlbumImage { height: 200px\9 !important;} }
+@media (min-width: 1280px) and (max-width: 1599px) {.fb-gallery-box .fbAlbumImage { height: 240px\9 !important;} }
+@media (min-width: 1600px) and (max-width: 1900px) {.fb-gallery-box .fbAlbumImage { width: 10%\9 !important; height: 150px\9 !important;} }
+@media (min-width: 1901px) { .fb-gallery-box .fbAlbumImage { width: 10%\9 !important; height: 190px\9 !important;} }
+
+/* FB Gallery IE8 */
+.fb-gallery { display: block\9 !important; }
+.fb-gallery-box .fbAlbumImage { height: 250px\9 !important; }
+.fb-gallery-box img { width: auto\9 !important; height: auto\9 !important; zoom: 50%\9;}
+
+
+/* BTN IE8 */
+.btn { min-height: 30px\9 !important; }
+
+/* BTN Duo */
+.btn-duo .btn {
+	width: 190px\9 !important;
+	font-size: 16px\9 !important;
+	height: 35px\9 !important;
+	padding-top: 20px\9 !important;
+  margin-right:0\9 !important;
+}
+
+/* Enry Boxes */
+.entry-type-box .btn-large {
+	min-width: 100px\9 !important;
+	min-height: 28px\9 !important;
+}
+
+/* IE9 onlypatch */
+.btn-duo .btn {
+	width: 48%\9\0 !important;
+	height: 45px\9\0 !important;
+	padding-top: 10px\9\0 !important;
+}
+@media (min-width: 992px) { .form-half { width: 48%\9\0 !important; }}

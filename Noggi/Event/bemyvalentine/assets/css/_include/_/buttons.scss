@@ -1,0 +1,46 @@
+/* Button hover style */
+.btn {
+	@include transition (all 250ms ease);
+	-webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	-webkit-transform: translateZ(0);
+	font-weight: bold;
+	border: 0;
+	padding: 9px 22px;
+	height: 40px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	}
+	.btn:hover {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE 8 */
+		filter: alpha(opacity=80); /* IE7 */
+		opacity: 0.8;
+		}
+		.btn:active {	}
+
+
+.btn-info {
+    border: 2px solid #72C6A2 !important;
+    box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF !important;
+    background: #fff !important;
+    color: #72C6A2 !important;
+    margin-right: 10px;
+    border-radius: 6px !important;
+}
+
+.btn-default {
+    border: 2px solid #A0D525 !important;
+    box-shadow: 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF,0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF, 0 0 2px #FFFFFF !important;
+    background: #fff !important;
+    color: #A0D525 !important;
+    margin-right: 10px;
+    border-radius: 6px !important;
+}
+
+.btn-inverse {
+    border: 2px solid #fff !important;
+    box-shadow: 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041,0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041, 0 0 2px #404041 !important;
+    background: #404041!important;
+    color: #fff !important;
+    margin-right: 10px;
+    border-radius: 6px !important;
+}

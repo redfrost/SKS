@@ -1,0 +1,72 @@
+# CONFIG - Refresh terminal command after updating this file to apply
+
+# Default setting
+name:         "Noggi"
+slogan:       "Spoon me"
+description:  "Noggi is SPOONING all around Australia. Get your froyolicking Noggi in any of our locations below"
+url:          "http://noggi.com.au/"
+markdown:     rdiscount
+pygments:     true
+sass:
+  syntax: scss # scss|sass
+  style:  expanded # nested|expanded|compact|compressed (use compressed for final version)
+
+
+# Meta
+author:       "SKS Services"
+designer:     "Redrost Design"
+designerURL:  "http://redfrost.com/"
+copyright:    "SKS Services"
+FBAppID:      ""
+keywords:     "Noggi Frozen Yogurt Shop"
+versionInfo:  "1.0"
+
+
+# Layout
+responsive:   "yes"   # yes|no (for mobile view only. Desktop view is always responsive.)
+siteWidth:    "1140"  # Content width + 30px margin
+navTopFix:    "no"   # yes: top nav | no: standard nav
+logoType:     "image" # text|image
+mobileZoom:   "1.0"   # 1.0=disable zoom
+preLoader:	  "no"    # Show loader before content load
+
+gridClass:
+  main:    "col-sm-12"
+  sidebar: "col-sm-12"
+
+
+# User info
+userInfo:
+  businessName: "Opera house"
+  userAddress:  "16/56 Buffalo Road. Gladeville NSW 2111 Australia."
+  pobox:        ""
+  phone:        "+61 2 9807 4177"
+  fax:          "+61 2 9807 4188"
+  userEmail:    "noggi@noggi.com.au"
+  workingHours:	""
+
+
+# Links
+snsLink:
+  link1:   "https://www.facebook.com/noggiyogurt" # Facebook
+  link2:   "http://statigr.am/tag/noggi" # Twitter
+  link3:   "#" # Google+
+  link4:   "#" # Youtube
+  link5:   "#" # LinkedIn
+
+
+# Add-on
+typekitID:    "ieg5weq"
+formLink:     ""
+formID:       "" # wufoo form ID
+disqus:       "" # disqus ID
+trackingID:   "UA-47618343-1" # Google analytics ID
+videoLink:    "https://www.youtube.com/embed/GaP6x9Gn0bU" # Vimeo / Youtube ID
+
+
+# Footer Note
+footerNote:   ""
+
+# Testing (at the end of production)
+styleTest:    "no"    # Display testing helpers
+siteIndexing: "no"    # yes|no: Block search engine

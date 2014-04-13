@@ -1,0 +1,456 @@
+/* Custom Layout */
+.home .main-content .full-width-box {
+	position: relative;
+	padding: 80px 0 96px;
+	}
+	.home .main-content .full-width-box h2 {
+		margin-bottom: 15px;
+		}
+		.home .main-content .full-width-box p {
+			margin-bottom: 30px;
+			}
+
+
+	.home #about {
+		background: #a0d525;
+		background-position: left center;
+		background-repeat: no-repeat;
+		background-size: 1280px 458px;
+		background-image: url("../images/bg-about.png");
+		}
+
+
+	.home #products {
+		background: #333335;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("../images/bg-products.jpg");
+		}
+
+
+	.home #locations {
+		background: #fff;
+		background-repeat: no-repeat;
+		background-size: 65px 105px;
+		background-position: 37% center;
+		background-image: url("../images/bg-location.png");
+		}
+
+
+	.home #catering {
+		background: #72c6a2;
+		background-position: right center;
+		background-repeat: no-repeat;
+		background-size: 600px 400px;
+		}
+		@media (min-width: 992px) {
+			.home #catering {
+				background-image: url("../images/bg-catering.jpg");
+			 }
+		}
+
+
+	.home #franchising { background: #333335;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-image: url("../images/bg-franchising.jpg");
+		}
+		.home #franchising * { color: #fff; }
+
+
+	.home #contact {
+		background: #a0d525;
+		background-repeat: no-repeat;
+		background-size: 250px 70px;
+		background-position: 65% center;
+		background-image: url("../images/bg-contact.png");
+		}
+
+
+	.home #whatson {
+		.square-box.hover-box-1 .description { padding: 75px 60px !important; }
+		.square-box.hover-box-2 .description { padding: 75px 30px !important; }
+		.square-box.hover-box-3 .description { padding: 75px 80px !important; }
+	}
+
+#franchising-page .square-box.hover-box-2 .description { padding: 75px 25px !important; }
+
+
+/* Square box */
+.boxes {
+	padding: 55px 0 0;
+	margin-bottom: -30px;
+
+	h2.section-title {
+		text-align: center;
+		margin-bottom: 55px;
+		}
+}
+
+.square-box {
+	overflow: hidden;
+	display: block;
+	background: #444;
+	margin-bottom: 30px;
+
+	.description {
+		display: table;
+		height: 100%;
+		width: 100%;
+		color: #fff;
+		position: absolute;
+		top: 40px;
+		padding: 75px 60px;
+
+		h3 {
+			color: #fff;
+			font-size: 38px;font-size: 2.38rem;
+			margin-bottom: 20px;
+			}
+	}
+
+	img {
+		opacity: 0.5;
+		@include transition (all 250ms ease-in-out);
+		}
+	@include transition (all 250ms ease-in-out);
+
+	/* Square box:Hover */
+	&:hover img {
+		@include transform(scale(1.2));
+		opacity: 0.8;
+	}
+
+}
+
+
+
+
+
+
+/* About us page */
+div.about-01 {
+	margin-bottom: 8px;
+	}
+	.about-01 h2 {
+		font-size: 38px;font-size: 2.38rem;
+		line-height: 1.25;
+		margin-bottom: 40px;
+		font-weight: bold;
+		}
+
+
+div.about-02 {
+	position: relative;
+	width: 100%;
+	height: 395px;
+	background-color: #333;
+	background-repeat: no-repeat;
+	background-image: url("../images/bg-aboutus.jpg");
+	margin-bottom: 55px;
+}
+
+.about-03 small { text-transform: uppercase; }
+
+
+
+/* Menu page */
+section.noggi-menu-page.jumbotron  {
+	background-image: url("../images/bg-products.jpg");
+	width: 100%;
+	background-repeat: no-repeat;
+	background-position: center 40%;
+	padding: 140px 0;
+	}
+	section.noggi-menu-page.jumbotron h2 {
+		margin-bottom: 20px;
+		}
+
+
+.menu-box {
+		display: inline-block;
+}
+
+.menu-box h3 {
+	font-size: 20px;font-size: 1.25rem;
+	margin-bottom: 15px;
+	margin-top: 20px;
+	}
+	.menu-box h4 {
+		font-weight: lighter;
+		padding-left: 37px;
+		}
+
+
+.menu-box.signature-range h3 {
+	margin-top: 0px;
+}
+
+
+.menu-title-box,
+.menu-list {
+	float: left;
+}
+
+
+.menu-title-box { width: 310px; }
+
+.menu-list li {
+	width: 280px;
+	list-style: none;
+	margin: 0 0 10px 4px;
+}
+.menu-list li img {
+	width: 100%;
+}
+
+.menu-box.classic-range ul li,
+.menu-box.signature-range ul li {
+		display: inline-block;
+}
+
+.menu-list {
+		padding-left: 36px;
+}
+
+.menu-box.classic-range .menu-list,
+.menu-box.signature-range .menu-list {
+	width: 610px;
+	margin-top: 30px;
+}
+
+.menu-box.seasonal-range ul {
+	float: left;
+	width: 290px;
+}
+
+.menu-box.seasonal-range h4 {
+	margin: 27px 0 20px;
+	text-align: center;
+}
+
+section.menu-additional {
+	position: relative;
+	padding: 140px 0;
+	width: 100%;
+	background-repeat: no-repeat;
+	}
+	section.menu-additional h2,
+	section.menu-additional p {
+		color: #fff;
+		margin-bottom: 20px;
+		}
+
+section.menu-additional.toppings  { background-image: url("../images/menu-toppings.jpg"); margin-top: 25px; }
+section.menu-additional.smoothies { background-image: url("../images/menu-smoothies.jpg"); }
+section.menu-additional.macarons  { background-image: url("../images/menu-macarons.jpg"); }
+section.menu-additional.coffee    { background-image: url("../images/menu-coffee.jpg"); }
+
+
+
+
+/* Contact page */
+.contact-page.jumbotron {
+	background: #333132;
+	color: #fff;
+	padding:  90px 0;
+	}
+	.contact-page.jumbotron h2 {
+		color: #fff;
+		margin-bottom: 70px;
+		}
+	.contact-page.jumbotron h4 {
+		color: #9fd424;
+		margin-bottom: 17px;
+		}
+
+
+/* Modal */
+.modal-backdrop { background-color: white; }
+.modal-dialog{
+	width: 98%;
+	max-width: 980px;
+	margin-bottom:  120px !important;
+}
+
+.modal-content {
+	background:  #333132;
+	color: #fff;
+	padding: 40px 70px;
+	box-shadow: none;
+	}
+	.modal-content h2 {
+		color: #fff;
+	}
+	.modal-content label {
+		color: #9fd424;
+		}
+
+.modal-header,
+.modal-footer {
+	border: 0;
+}
+
+.modal-title {
+	line-height: 1.13;
+}
+
+.modal-footer {
+	text-align: center;
+	padding: 0;
+}
+
+.modal-footer button.close {
+	float:  none;
+	background: #333132;
+	color: #fff;
+	cursor: pointer;
+	font-size: 28px;font-size: 1.75rem;
+	font-weight: lighter;
+	height: 30px;
+	opacity: 1;
+	padding: 0;
+	text-shadow: none;
+	width: 30px;
+	margin-top: 50px;
+	margin-left: -15px;
+	position: absolute;
+	}
+
+
+/* Fancybox */
+#fancybox-bg-n,
+#fancybox-bg-ne,
+#fancybox-bg-e,
+#fancybox-bg-se,
+#fancybox-bg-s,
+#fancybox-bg-sw,
+#fancybox-bg-w,
+#fancybox-bg-nw {
+	background: transparent !important;
+	}
+	#fancybox-close {
+		background-color: #333;
+		width: 30px;
+		height: 30px;
+	}
+	#fancybox-close:after {
+		background: #333132;
+		color: #fff;
+		content: "×";
+		cursor: pointer;
+		float: left;
+		font-size: 1.75rem;
+		line-height: 1;
+		font-weight: lighter;
+		height: 30px;
+		width: 30px;
+		padding: 1px 6px;
+		position: relative;
+	}
+
+	#fancybox-close {
+	    background-image: none !important;
+	    cursor: pointer;
+	    display: block !important;
+	    height: 0px !important;
+	    margin: auto;
+	    position: relative !important;
+	    top: 10px !important;
+	    width: 30px;
+			right: 0 !important;
+	    z-index: 11103;
+	}
+
+
+.modal h4 {
+		color: #9fd424;
+		margin-bottom: 17px;
+}
+.modal dl {
+	margin-bottom: 46px;
+} .modal dl:last-of-type
+{
+margin-bottom: 0;
+}
+
+#investmentGuideModal.modal .left {
+	padding: 70px 0 0;
+}
+
+#investmentGuideModal.modal .right {
+	padding: 5px 0 25px;
+}
+.modal.inline-box .modal-footer {
+	padding: 0;
+}
+
+
+.modal.inline-box .modal-footer button.close {
+	margin-top: 50px;
+}
+
+#franchisingSiteModal h2.modal-title {
+	margin-top: 215px;
+}
+
+.site-list {
+	width: 184px;
+	float: left;
+	margin-bottom: 12px;
+}
+.site-list h4 {
+	margin-bottom: 22px;
+}
+.site-list ul {
+	list-style: disc inside;
+	padding-left: 0;
+}
+
+.faq dt { margin-bottom: 22px; }
+.faq dd { margin-bottom: 30px; }
+.faq a { color: #fff; text-decoration: underline; }
+
+
+.modal.gallery {
+
+	.modal-body {
+		padding: 0;
+		}
+
+	.modal-content {
+		padding: 0;
+
+		.modal-title {
+			margin-bottom: 25px;
+			}
+		.description p {
+			@include font-size(14);
+			font-weight: lighter;
+			}
+
+			.modal-footer img {
+				width: 65px;
+				height: auto;
+				float: left;
+				margin-left: 30px;
+				margin-top: -70px;
+			}
+
+			.col-sm-8 {overflow: hidden;}
+			.cover {     margin: -70px;
+    min-height: 577px; }
+	}
+
+.clearfloat { height: 0; }
+ button.close { margin-top: 10px !important;}
+}
+
+.modal .title-column {
+	padding: 40px 30px;
+}
+
+.modal .content-column {
+}

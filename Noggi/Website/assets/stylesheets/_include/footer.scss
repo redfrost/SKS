@@ -1,0 +1,113 @@
+/* Footer style */
+#footer {
+	padding: 40px 0;
+	}
+	#footer a,
+	#footer a:active {
+		opacity: 1;
+		}
+		#footer a:hover {
+		opacity: 0.6;
+		}
+		#footer li:first-child {
+			padding-left: 0;
+			}
+
+
+/* Footer menu */
+#footer .footer-menu-box {
+	border-top: 1px solid #ccc;
+	padding-top: 18px;
+	width: 100%;
+	}
+	#footer .footer-menu {
+		float: left;
+		margin-left: 0;
+		text-transform: uppercase;
+		width: 70%;
+		}
+
+
+/* SNS Links */
+#footer .sns-icons {
+	width: 30%;
+	float: left;
+	margin-top: 0;
+	padding-left: 0;
+	text-align: right;
+	}
+	#footer .sns-icons li {
+		display: inline-block;
+		line-height: 20px;
+		padding-left: 10px;
+		}
+		#footer .sns-icons li a {
+			font-size: 22rem;font-size: 1.38rem;
+			}
+
+
+/* Footer Note */
+#footer .footer-note {
+	font-size: 14rem;font-size: 0.88rem;
+	padding: 16px 0;
+	}
+
+
+/* Copyright */
+#footer .copyright-box {
+	line-height: 1;
+	}
+	#footer .copyright {
+		float: left;
+		margin: 14px 0;
+		}
+
+	#footer .maker {
+		border-left: 1px solid #ccc;
+		float: left;
+		margin: 14px 0 0 6px;
+		padding-left: 6px;
+		}
+
+
+/* Back to top */
+.back-top {
+	line-height: 1;
+	float: right;
+	padding: 14px 0 0;
+	}
+
+
+/* Responsive */
+@media (max-width: 767px){
+
+		#footer .footer-menu,
+		#footer .sns-icons,
+		#footer .copyright,
+		#footer .maker,
+		.back-top {
+			width: 100%;
+			text-align: center;
+			}
+			#footer .footer-menu li {
+				display: block;
+				margin: 14px 0;
+				padding: 0;
+				}
+
+		#footer .maker {
+			border-left: 0;
+			margin-left: 0;
+			padding-left: 0;
+			}
+
+		.back-top a {
+			display: inline-block;
+			border: 1px solid;
+			margin-top: 20px;
+			padding: 10px 20px;
+			}
+
+	}
+
+

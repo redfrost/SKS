@@ -1,0 +1,85 @@
+		<footer id="footer">
+			<section class="container footerbox">
+			<div class="row">
+
+				<div class="footerbox-01 col-md-2 col-sm-3">
+					<img src="assets/images/footer-spoonme.png" alt="Spoon me&#0153;" />
+				</div>
+
+				<div class="footerbox-02 col-md-3 col-sm-4">
+				  <img src="assets/images/footer-lick.png" alt="Lick ferociously, Spoon responsibly" />
+				</div>
+
+				<div class="footerbox-03 col-md-2 col-sm-3">
+					<img src="assets/images/footer-australian.png" alt="Australian Owned" />
+				</div>
+
+				<div class="footerbox-04 sns-links col-md-2 col-sm-2">
+					<a href="http://www.facebook.com/noggiyogurt" class="sns-icon facebook"><img src="assets/images/footer-fb.png" alt="Facebook" /></a>
+					<a href="http://statigr.am/tag/noggi" class="sns-icon instagram"><img src="assets/images/footer-insta.png" alt="Instagram" /></a>
+				</div>
+
+				<div class="footerbox-05 copyright col-md-3">
+					<p><strong>SKS Services Pty. Ltd.</strong>
+					<small>ABN 11 160 965 024</small></p>
+					<p>16/56 Buffalo Road Gladeville NSW 2111</p>
+					<p>Copyright&copy;Noggi <script>document.write(new Date().getFullYear())</script>. All Rights Reserved.</p>
+				</div>
+
+			</div><!-- /.row -->
+			</section><!-- /.container -->
+
+		</footer><!-- /#footer -->
+</div><!-- /#master-wrap -->
+
+
+	<!-- Modal Popup -->
+	{% include section-modal.html %}
+
+
+	<!-- Extra fixed BG for iPad -->
+	<div class="bg"></div>
+
+
+	<!-- Scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery.js"><\/script>')</script>
+	<script type="text/javascript" src="assets/javascripts/base.js"></script>
+	<script type="text/javascript" src="assets/javascripts/application.js"></script>
+
+	<!-- Plugins -->
+	<script type="text/javascript" src="assets/plugins/plugins.js"></script>
+	<script type="text/javascript" src="assets/plugins/wufoo.js"></script>
+
+	<!-- Fancybox -->
+	<link rel="stylesheet" href="assets/plugins/fancyBox/jquery.fancybox-1.3.6.pack.css">
+	<script type="text/javascript" src="assets/plugins/fancyBox/jquery.mousewheel.pack.js"></script>
+	<script type="text/javascript" src="assets/plugins/fancyBox/jquery.fancybox-1.3.6.pack.js"></script>
+
+
+	<!-- IE ONLY -->
+		<!--[if lt IE 9]><div class="ie-warning alert alert-danger alert-dismissable">
+			<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+			You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div><![endif]-->
+
+		<!--[if IE]>
+			<link rel="stylesheet" type="text/css" href="assets/stylesheets/ie.css" />
+		<![endif]-->
+
+		<!--[if lt IE 10]>
+			<script src="assets/javascripts/ie8.js"></script>
+		<![endif]-->
+
+
+	<!-- Tracking code -->
+	<script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','{{site.trackingId}}');ga('send','pageview');
+	</script>
+
+</body>
+</html>

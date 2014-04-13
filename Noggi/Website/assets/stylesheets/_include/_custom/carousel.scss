@@ -1,0 +1,31 @@
+.hero-unit.carousel-section {
+	background: #333;
+	margin-bottom: 132px; 		max-height: 640px;
+	}
+	.hero-unit.carousel-section .carousel-inner {
+
+		overflow: hidden;
+		}
+		.hero-unit.carousel-section .carousel-inner a:hover { opacity: 1; }
+
+
+		.hero-unit.carousel-section .carousel-indicators {
+			bottom: -150px;
+			padding: 44px 0;
+			}
+			.hero-unit.carousel-section .carousel-indicators li {
+				background-color: #939598;
+				margin: 0 8px;
+			}
+			.hero-unit.carousel-section .carousel-indicators .active {
+				background-color: #333132;
+				width: 10px;
+				height: 10px;
+				}
+
+.carousel-section .item {
+	background: url("../images/feature-slider-01.jpg") no-repeat scroll center center #333335;
+	margin-bottom: 0;
+	padding-bottom: 60px;
+	padding-top: 60px;
+	}

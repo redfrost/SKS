@@ -1,0 +1,37 @@
+/* Button hover style */
+.btn {
+	@include transition (all 250ms ease);
+	-webkit-backface-visibility: hidden; /* Safari Flicker Fix #2 */
+	-webkit-transform: translateZ(0);
+	font-size: 18px;
+	font-weight: 600;
+	border: 0;
+	padding: 6px 7px;
+	height: 40px;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	}
+	.btn:hover {
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)"; /* IE 8 */
+		filter: alpha(opacity=80); /* IE7 */
+		opacity: 0.8;
+		}
+		.btn:active {	}
+
+
+.btn-default {
+    border: 2px solid #fff !important;
+    box-shadow: 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43,0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43,0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43,0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43, 0 0 2px #ee3a43 !important;
+    background: #ee3a43 !important;
+    color: #fff !important;
+    border-radius: 6px !important;
+		min-width: 116px;
+}
+
+.btn-inverse {
+    border: 2px solid #ee3a43 !important;
+    background: transparent!important;
+    color: #ee3a43 !important;
+    border-radius: 6px !important;
+		min-width: 116px;
+}

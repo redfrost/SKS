@@ -1,0 +1,69 @@
+/*
+-------------------------------------------
+Standard:
+14px (0.88em) / 1.42857 (BS default)
+16px (1em) / 1.42857 (English)
+16px (1em) / 1.6 (Korean)
+
+Blog:
+16px (1em) / 1.68 (Book style:1.8)
+
+Modern Blog:
+18px (1.13em) / 1.68
+20px (1.25em) / 1.68
+
+Dropcap:
+line-height 1.25
+
+Paragraph:
+margin: 0 0 1rem (default)
+margin: 0 0 1.38rem (English)
+margin: 0 0 1.6rem (Blog)
+
+Golden ratio:
+14px 720px = 1.5
+15px 720px = 1.56
+16px 720px = 1.63
+14px 960px = 1.63
+15px 960px = 1.69
+16px 960px = 1.75
+14px 1000px = 1.69
+16px 1000px = 1.75
+16px 1140px = 1.81
+18px 1140px = 1.94
+
+-------------------------------------------
+*/
+/* @import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,400,300,700,800); */
+
+body {
+	color: #444;
+	line-height: 1.75;
+	font-size: 1rem;
+}
+
+
+body,
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family:'Proxima Nova','proxima-nova', Helvetica, Arial,
+	"나눔바른고딕","NanumBarunGothic", "Apple SD Gothic Neo", "나눔고딕", "Nanum Gothic", "Malgun Gothic", Applegothic, Dotum,
+	sans-serif;
+	}
+
+	h1 { font-size: 63px;font-size: 3.94rem; font-weight: 600; text-transform: uppercase; }
+	h2 { font-size: 42px;font-size: 2.63rem; font-weight: 600; text-transform: uppercase; }
+	h3 { font-size: 26px;font-size: 1.63rem; font-weight: 600; text-transform: uppercase; }
+	h4 { font-size: 20px;font-size: 1.25rem; font-weight: 600; text-transform: uppercase; }
+	h5 { font-size: 16px;font-size: 1.17rem; font-weight: 600; text-transform: uppercase; }
+	h6 { font-size: 13px;font-size: 0.83rem; font-weight: 600; text-transform: uppercase; }
+
+
+.light-weight,.lighter  { font-weight: lighter !important; }
+.normal-weight { font-weight: normal !important;  }
+.heavy-weight,.bolder  { font-weight: bold !important; }
+.korean p { line-height: 1.68; }
+.warning { color: #f40c5f; }
+small { font-size: 14px; }
+.byline { color: #BDC3C7; }
+

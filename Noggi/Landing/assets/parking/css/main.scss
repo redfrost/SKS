@@ -1,0 +1,26 @@
+/* =============================================================================
+   Global setting
+   ============================================================================= */
+@import "bourbon";
+@import "_include/_global";
+@import "_include/_font-awesome"; /* Icon font */
+
+/* =============================================================================
+   Layout template setting
+   ============================================================================= */
+@import "_include/layout";
+
+
+/* =============================================================================
+   Elements
+   ============================================================================= */
+@import "_include/animation";
+@import "_include/typography";
+@import "_include/header";
+@import "_include/footer";
+@import "_include/buttons";
+@import "_include/forms";
+@import "_include/section-header";
+
+@import "_include/custom";
+

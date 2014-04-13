@@ -1,0 +1,18 @@
+# TEAM
+
+	Redfrost
+	Design & Development
+	Contact: redfrost.com
+
+
+
+# THANKS
+
+	Alex Lim
+	Contact: contact@simonalex.com
+
+
+
+# TECHNOLOGY
+
+	HTML5, CSS3, jQuery, Bootstrap

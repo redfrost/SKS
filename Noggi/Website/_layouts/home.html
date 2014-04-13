@@ -1,0 +1,32 @@
+{% include head.html %}
+
+<body id="top" class="responsive home" data-spy="scroll">{% if site.preLoader == 'no' %}
+	<div id="master-wrap">{% else %}
+	<div id="master-wrap" style="opacity: 0;">{% endif %}
+
+		<!-- Nav menu -->
+		{% include nav.html %}
+
+		<!-- Main jumbotron unit -->
+		{% include section-carousel.html %}
+
+		<!-- Contents -->
+		<div class="main-content">
+
+			{% include /home/section-about.html %}
+
+			{% include /home/section-products.html %}
+
+			{% include /home/section-locations.html %}
+
+			{% include /home/section-catering.html %}
+
+			{% include /home/section-franchising.html %}
+
+			{% include /home/section-contact.html %}
+
+			{% include /home/section-whatson.html %}
+
+		</div><!-- /.main-content -->
+
+{% include footer.html %}

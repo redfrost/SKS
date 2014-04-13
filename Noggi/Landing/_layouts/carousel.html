@@ -1,0 +1,33 @@
+{% include head.html %}
+
+<body id="top" class="{{site.layoutStyle}}" data-spy="scroll">
+	{% if site.preLoader == 'no' %}
+	<div id="master-wrap">
+	{% else %}
+	<div id="master-wrap" style="opacity: 0;">
+	{% endif %}
+
+		<!-- Nav menu -->
+		{% include section-menu.html %}
+
+		<!-- Main jumbotron unit -->
+		{% include section-carousel.html %}
+
+		<!-- Contents -->
+		<div class="main-content">
+
+			{% include section-about.html %}
+
+			{% include section-services.html %}
+
+			{% include section-pricing.html %}
+
+			{% include section-team.html %}
+
+			{% include section-location.html %}
+
+			{% include section-partners.html %}
+
+		</div><!-- /.main-content -->
+
+		{% include footer.html %}

@@ -1,0 +1,46 @@
+@font-face {
+	font-family: 'noggi-valentine';
+	src:url('../fonts/noggi-valentine.eot');
+	src:url('../fonts/noggi-valentine.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/noggi-valentine.woff') format('woff'),
+		url('../fonts/noggi-valentine.ttf') format('truetype'),
+		url('../fonts/noggi-valentine.svg#noggi-valentine') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'noggi-valentine';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-map-pointer:before {
+	content: "\e601";
+}
+.icon-heart:before {
+	content: "\e602";
+}
+.icon-clock-900:before {
+	content: "\e603";
+}
+.icon-clock-615:before {
+	content: "\e604";
+}
+.icon-car:before {
+	content: "\e605";
+}
+.icon-warning:before {
+	content: "\e600";
+}
+.icon-check:before {
+	content: "\e606";
+}

@@ -1,0 +1,65 @@
+# Default setting
+name:         "Noggi"
+slogan:       "Spoon me"
+description:  "Noggi is SPOONING all around Australia. Get your froyolicking Noggi in any of our locations below"
+url:          "http://noggi.com.au/"
+markdown:     rdiscount
+pygments:     true
+sass:
+  syntax: scss # scss|sass
+  style:  compressed # nested|expanded|compact|compressed
+
+
+# Meta
+author:       "SKS Services"
+designer:     "Redrost Design"
+designerURL:  "http://redfrost.com/"
+copyright:    "SKS Services"
+FBAppID:      ""
+keywords:     "Noggi Frozen Yogurt Shop"
+versionInfo:  "1.5a"
+
+
+# Site setting
+responsive:   "yes"   # yes|no
+siteWidth:    "1140"
+navTopFix:    "yes"
+logoType:     "image"  # text|image
+mobileApp:	  "no"
+mobileZoom:   "1.0"   # 1.0=disable zoom
+preLoader:	  "no"
+siteIndexing: "no"
+styleTest:    "no"
+
+
+## User setting
+userInfo:
+  businessName: "Opera house"
+  userAddress:  "Bennelong Point Sydney NSW 2000 Australia"
+  poBox:        "Royal Exchange Sydney"
+  phone:        "123-456-7890"
+  fax:          "123-456-7890"
+  userEmail:    "info@redfrost.com"
+  workingHours:	"Working hours: 9:00AM - 5:00PM (Monday to Friday)"
+
+
+# Links
+snsLink:
+  link1:   "https://www.facebook.com/noggiyogurt" # Facebook
+  link2:   "http://statigr.am/tag/noggi" # Twitter
+  link3:   "#" # Google+
+  link4:   "#" # Youtube
+  link5:   "#" # LinkedIn
+
+
+# Add-on
+typekitID:    "ieg5weq"
+formLink:     ""
+formID:       "" # wufoo form ID
+disqus:       "" # disqus ID
+trackingID:   "UA-47618343-1" # Google analytics ID
+videoLink:    ""
+
+
+# Footer Note
+footerNote:   ""

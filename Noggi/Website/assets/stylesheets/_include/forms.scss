@@ -1,0 +1,68 @@
+form { margin-bottom: 10px; }
+	form:before,
+	form:after {content:" ";display:table;}
+	form:after {clear:both;}
+
+.form-control {
+	border-radius: 0;
+	font-size: 16px;font-size: 1rem;
+	min-height: 45px;
+	}
+
+.form-group input:disabled {
+	background: #f1f1f1 !important;
+	color: #bbb;
+	}
+
+.form-inline {
+	display: inline-block !important;
+	}
+
+
+
+/* Styling Select box
+---------------------------------- */
+.form-group select {
+
+	/* 1. Reset box */
+  border: 0;
+	@include appearance(none);
+
+	/* 2. Remove selectbox arrow FF */
+	text-indent: 0.01px;
+	text-overflow: '';
+	}
+
+	/* 3. Remove selectbox arrow IE */
+	.form-group select::-ms-expand { display: none; }
+
+	/* 4. Add new style */
+	.form-group select {
+		float: left;
+		height: 48px;
+		min-width: 100%;
+		background: #fff;
+		border-radius: 3px;
+    padding: 12px;
+		margin-bottom: 15px;
+		}
+
+	/* 5. Add arrow */
+	.form-group.select-box:after {
+		content: " ";
+		display: inline-block;
+		float: right;
+		margin: -40px 20px 0 0;
+
+		/* Arrow bottom */
+		width: 0px;
+		height: 0px;
+		border-left: 6px solid transparent;
+		border-right: 6px solid transparent;
+		border-top: 6px solid #666666;
+		}
+
+	/* 6 Cross browsing FIX - Webkit only */
+	@media screen and (-webkit-min-device-pixel-ratio:0){
+		.form-group select { padding: 0px 28px 0px 12px !important }
+		}
